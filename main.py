@@ -46,7 +46,7 @@ def salvar_resultados(nome_algoritmo, resultado, cenarios_custo, arquivo):
         f.write(f"Nós gerados: {resultado['nos_gerados']}\n")
         f.write(f"Nós visitados: {resultado['nos_visitados']}\n")
         caminho = resultado['caminho']
-        f.write(f"Caminho encontrado: {caminho[:5]}{'...' if len(caminho) > 5 else ''}\n")
+        f.write(f"Caminho encontrado: {caminho}\n")
         f.write("\n")
 
 # Algoritmos de busca (adapte o restante conforme necessário)
