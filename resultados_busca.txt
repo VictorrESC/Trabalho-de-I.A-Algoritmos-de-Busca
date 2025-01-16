@@ -1,0 +1,30 @@
+Resultados das buscas:
+
+Algoritmo: Busca em Largura
+Cenário de custo: C1
+Custo do caminho: 4
+Nós gerados: 17
+Nós visitados: 13
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+
+Algoritmo: Busca em Largura
+Cenário de custo: C2
+Custo do caminho: 4
+Nós gerados: 17
+Nós visitados: 13
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+
+Algoritmo: Busca em Largura
+Cenário de custo: C3
+Custo do caminho: 4
+Nós gerados: 17
+Nós visitados: 13
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+
+Algoritmo: Busca em Largura
+Cenário de custo: C4
+Custo do caminho: 4
+Nós gerados: 17
+Nós visitados: 13
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+
