@@ -1,30 +1,150 @@
 Resultados das buscas:
 
+
+==== Cenário C1 ====
 Algoritmo: Busca em Largura
 Cenário de custo: C1
-Custo do caminho: 4
-Nós gerados: 17
-Nós visitados: 13
-Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+Custo do caminho: 10
+Nós gerados: 71
+Nós visitados: 61
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
 
+Algoritmo: Busca em Profundidade
+Cenário de custo: C1
+Custo do caminho: 70
+Nós gerados: 960
+Nós visitados: 896
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
+
+Algoritmo: Busca de Custo Uniforme
+Cenário de custo: C1
+Custo do caminho: 100
+Nós gerados: 120
+Nós visitados: 101
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca A*
+Cenário de custo: C1
+Custo do caminho: 100
+Nós gerados: 70
+Nós visitados: 60
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca A* (Euclidiana)
+Cenário de custo: C1
+Custo do caminho: 100
+Nós gerados: 70
+Nós visitados: 60
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+
+==== Cenário C2 ====
 Algoritmo: Busca em Largura
 Cenário de custo: C2
-Custo do caminho: 4
-Nós gerados: 17
-Nós visitados: 13
-Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+Custo do caminho: 10
+Nós gerados: 71
+Nós visitados: 61
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
 
+Algoritmo: Busca em Profundidade
+Cenário de custo: C2
+Custo do caminho: 70
+Nós gerados: 960
+Nós visitados: 896
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
+
+Algoritmo: Busca de Custo Uniforme
+Cenário de custo: C2
+Custo do caminho: 125
+Nós gerados: 126
+Nós visitados: 106
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca A*
+Cenário de custo: C2
+Custo do caminho: 125
+Nós gerados: 74
+Nós visitados: 63
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca A* (Euclidiana)
+Cenário de custo: C2
+Custo do caminho: 125
+Nós gerados: 78
+Nós visitados: 66
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+
+==== Cenário C3 ====
 Algoritmo: Busca em Largura
 Cenário de custo: C3
-Custo do caminho: 4
-Nós gerados: 17
-Nós visitados: 13
-Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+Custo do caminho: 10
+Nós gerados: 71
+Nós visitados: 61
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
 
+Algoritmo: Busca em Profundidade
+Cenário de custo: C3
+Custo do caminho: 70
+Nós gerados: 960
+Nós visitados: 896
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
+
+Algoritmo: Busca de Custo Uniforme
+Cenário de custo: C3
+Custo do caminho: 106
+Nós gerados: 116
+Nós visitados: 98
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca A*
+Cenário de custo: C3
+Custo do caminho: 110
+Nós gerados: 33
+Nós visitados: 16
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
+
+Algoritmo: Busca A* (Euclidiana)
+Cenário de custo: C3
+Custo do caminho: 106
+Nós gerados: 64
+Nós visitados: 46
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (1, 3)]...
+
+
+==== Cenário C4 ====
 Algoritmo: Busca em Largura
 Cenário de custo: C4
-Custo do caminho: 4
-Nós gerados: 17
-Nós visitados: 13
-Caminho encontrado: [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+Custo do caminho: 10
+Nós gerados: 71
+Nós visitados: 61
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca em Profundidade
+Cenário de custo: C4
+Custo do caminho: 70
+Nós gerados: 960
+Nós visitados: 896
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
+
+Algoritmo: Busca de Custo Uniforme
+Cenário de custo: C4
+Custo do caminho: 90
+Nós gerados: 104
+Nós visitados: 85
+Caminho encontrado: [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]...
+
+Algoritmo: Busca A*
+Cenário de custo: C4
+Custo do caminho: 90
+Nós gerados: 24
+Nós visitados: 11
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
+
+Algoritmo: Busca A* (Euclidiana)
+Cenário de custo: C4
+Custo do caminho: 95
+Nós gerados: 43
+Nós visitados: 28
+Caminho encontrado: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4)]...
 
