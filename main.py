@@ -37,19 +37,23 @@ def gerar_vizinhos(estado):
     ]
     return [(vx, vy) for vx, vy in vizinhos if 0 <= vx <= 30 and 0 <= vy <= 30]
 
-# Função para salvar resultados no arquivo
-def salvar_resultados(nome_algoritmo, resultado, cenarios_custo, arquivo):
+def salvar_resultados(nome_algoritmo, resultado, arquivo):
     with open(arquivo, "a") as f:
         f.write(f"Algoritmo: {nome_algoritmo}\n")
-        f.write(f"Cenário de custo: {cenarios_custo}\n")
         f.write(f"Custo do caminho: {resultado['custo']}\n")
         f.write(f"Nós gerados: {resultado['nos_gerados']}\n")
         f.write(f"Nós visitados: {resultado['nos_visitados']}\n")
+        
+        # Salva os nós visitados
+        f.write("Nós visitados: \n")
+        for estado in resultado.get('nos_visitados_lista', []):
+            f.write(f"{estado}\n")
+        
+        # Salva o caminho
         caminho = resultado['caminho']
         f.write(f"Caminho encontrado: {caminho}\n")
         f.write("\n")
 
-# Algoritmos de busca (adapte o restante conforme necessário)
 def busca_em_largura(estado_inicial, estado_objetivo, gerar_vizinhos):
     fila = deque([estado_inicial])
     visitados = set()
@@ -57,17 +61,20 @@ def busca_em_largura(estado_inicial, estado_objetivo, gerar_vizinhos):
     pais = {estado_inicial: None}
     profundidade = {estado_inicial: 0}
     nos_gerados, nos_visitados = 0, 0
+    nos_visitados_lista = []  # Lista para armazenar os estados visitados
 
     while fila:
         estado_atual = fila.popleft()
         nos_visitados += 1
+        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
+
         if estado_atual == estado_objetivo:
             caminho = []
             while estado_atual is not None:
                 caminho.append(estado_atual)
                 estado_atual = pais[estado_atual]
             caminho.reverse()
-            return {"caminho": caminho, "custo": len(caminho) - 1, "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+            return {"caminho": caminho, "custo": profundidade[estado_objetivo] * 10, "nos_gerados": nos_gerados, "nos_visitados": nos_visitados, "nos_visitados_lista": nos_visitados_lista}
 
         for vizinho in gerar_vizinhos(estado_atual):
             if vizinho not in visitados:
@@ -77,28 +84,62 @@ def busca_em_largura(estado_inicial, estado_objetivo, gerar_vizinhos):
                 profundidade[vizinho] = profundidade[estado_atual] + 1
                 nos_gerados += 1
 
-    return {"caminho": None, "custo": float("inf"), "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+    return {"caminho": None, "custo": float("inf"), "nos_gerados": nos_gerados, "nos_visitados": nos_visitados, "nos_visitados_lista": nos_visitados_lista}
 
-# Busca em Profundidade
 def busca_em_profundidade(estado_inicial, estado_objetivo, gerar_vizinhos):
+    """
+    Implementa o algoritmo de Busca em Profundidade (DFS), evitando revisitar estados.
+
+    Args:
+        estado_inicial (tuple): O estado inicial (ex.: coordenadas).
+        estado_objetivo (tuple): O estado objetivo.
+        gerar_vizinhos (func): Função que gera os vizinhos de um estado.
+
+    Returns:
+        dict: Contendo o caminho encontrado, custo, nós gerados e nós visitados.
+    """
+    # Verificação inicial
+    if estado_inicial == estado_objetivo:
+        return {
+            "caminho": [estado_inicial],
+            "custo": 0,
+            "nos_gerados": 1,
+            "nos_visitados": 1,
+            "nos_visitados_lista": [estado_inicial]
+        }
+
+    # Inicialização
     pilha = [estado_inicial]
     visitados = set()
     visitados.add(estado_inicial)
     pais = {estado_inicial: None}
     profundidade = {estado_inicial: 0}
     nos_gerados, nos_visitados = 0, 0
+    # nos_visitados_lista = []  # Lista para armazenar os estados visitados
 
+    # Busca
     while pilha:
         estado_atual = pilha.pop()
         nos_visitados += 1
+        # nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
+
+        # Verifica se atingiu o objetivo
         if estado_atual == estado_objetivo:
+            # Reconstrução do caminho
             caminho = []
             while estado_atual is not None:
                 caminho.append(estado_atual)
                 estado_atual = pais[estado_atual]
             caminho.reverse()
-            return {"caminho": caminho, "custo": len(caminho) - 1, "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+            return {
+                "caminho": caminho,
+                "custo": profundidade[caminho[-1]] * 10,  # Ajuste do custo conforme necessário
+                "nos_gerados": nos_gerados,
+                "nos_visitados": nos_visitados,
+                # "nos_visitados_lista": nos_visitados_lista
+            }
 
+        # Gera vizinhos e processa, garantindo que não sejam visitados novamente
         for vizinho in gerar_vizinhos(estado_atual):
             if vizinho not in visitados:
                 visitados.add(vizinho)
@@ -107,9 +148,18 @@ def busca_em_profundidade(estado_inicial, estado_objetivo, gerar_vizinhos):
                 profundidade[vizinho] = profundidade[estado_atual] + 1
                 nos_gerados += 1
 
-    return {"caminho": None, "custo": float("inf"), "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+    # Caso não encontre o objetivo
+    return {
+        "caminho": None,
+        "custo": float("inf"),
+        "nos_gerados": nos_gerados,
+        "nos_visitados": nos_visitados,
+        "nos_visitados_lista": nos_visitados_lista
+    }
 
-# Busca de Custo Uniforme
+
+import heapq
+
 def busca_de_custo_uniforme(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_custo):
     fila_prioridade = []
     heapq.heappush(fila_prioridade, (0, estado_inicial))
@@ -118,17 +168,27 @@ def busca_de_custo_uniforme(estado_inicial, estado_objetivo, gerar_vizinhos, cal
     custos = {estado_inicial: 0}
     profundidade = {estado_inicial: 0}
     nos_gerados, nos_visitados = 0, 0
+    nos_visitados_lista = []  # Lista para armazenar os estados visitados
 
     while fila_prioridade:
         custo_atual, estado_atual = heapq.heappop(fila_prioridade)
         nos_visitados += 1
+        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
+
         if estado_atual == estado_objetivo:
+            # Reconstrói o caminho e retorna o resultado
             caminho = []
             while estado_atual is not None:
                 caminho.append(estado_atual)
                 estado_atual = pais[estado_atual]
             caminho.reverse()
-            return {"caminho": caminho, "custo": custo_atual, "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+            return {
+                "caminho": caminho,
+                "custo": custo_atual,
+                "nos_gerados": nos_gerados,
+                "nos_visitados": nos_visitados,
+                "nos_visitados_lista": nos_visitados_lista
+            }
 
         if estado_atual in visitados:
             continue
@@ -143,17 +203,31 @@ def busca_de_custo_uniforme(estado_inicial, estado_objetivo, gerar_vizinhos, cal
                 heapq.heappush(fila_prioridade, (novo_custo, vizinho))
                 nos_gerados += 1
 
-    return {"caminho": None, "custo": float("inf"), "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+    return {
+        "caminho": None,
+        "custo": float("inf"),
+        "nos_gerados": nos_gerados,
+        "nos_visitados": nos_visitados,
+        "nos_visitados_lista": nos_visitados_lista
+    }
 
-# Busca A*
-def busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_custo, tipo_heuristica="manhattan"):
-    if tipo_heuristica == "euclidiana":
-        heuristica = heuristica_euclidiana
-    elif tipo_heuristica == "manhattan":
-        heuristica = heuristica_manhattan
-    else:
-        raise ValueError("Heurística inválida.")
 
+import heapq
+
+def busca_gulosa(estado_inicial, estado_objetivo, gerar_vizinhos, heuristica, calcular_custo):
+    """
+    Implementa o algoritmo de Busca Gulosa com custo e heurística.
+
+    Args:
+        estado_inicial (any): O estado inicial do problema.
+        estado_objetivo (any): O estado objetivo do problema.
+        gerar_vizinhos (func): Função que retorna os estados vizinhos de um estado.
+        heuristica (func): Função heurística que avalia um estado.
+        calcular_custo (func): Função que calcula o custo entre dois estados.
+
+    Returns:
+        dict: Contendo o caminho encontrado, custo, nós gerados e nós visitados.
+    """
     fila_prioridade = []
     heapq.heappush(fila_prioridade, (0, estado_inicial))
     visitados = set()
@@ -161,17 +235,92 @@ def busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_cu
     custos = {estado_inicial: 0}
     profundidade = {estado_inicial: 0}
     nos_gerados, nos_visitados = 0, 0
+    nos_visitados_lista = []  # Lista para armazenar os estados visitados
 
     while fila_prioridade:
-        _, estado_atual = heapq.heappop(fila_prioridade)
+        custo_atual, estado_atual = heapq.heappop(fila_prioridade)
         nos_visitados += 1
+        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
+
         if estado_atual == estado_objetivo:
             caminho = []
             while estado_atual is not None:
                 caminho.append(estado_atual)
                 estado_atual = pais[estado_atual]
             caminho.reverse()
-            return {"caminho": caminho, "custo": custos[estado_objetivo], "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+            return {
+                "caminho": caminho,
+                "custo": custos[estado_objetivo],
+                "nos_gerados": nos_gerados,
+                "nos_visitados": nos_visitados,
+                "nos_visitados_lista": nos_visitados_lista
+            }
+
+        if estado_atual in visitados:
+            continue
+        visitados.add(estado_atual)
+
+        for vizinho in gerar_vizinhos(estado_atual):
+            custo_h = heuristica(vizinho, estado_objetivo)
+            custo_g = custos[estado_atual] + calcular_custo(estado_atual, vizinho, profundidade[estado_atual])
+            if vizinho not in visitados or custo_g < custos.get(vizinho, float("inf")):
+                custos[vizinho] = custo_g
+                profundidade[vizinho] = profundidade[estado_atual] + 1
+                pais[vizinho] = estado_atual
+                heapq.heappush(fila_prioridade, (custo_h, vizinho))
+                nos_gerados += 1
+
+    return {
+        "caminho": None,
+        "custo": float("inf"),
+        "nos_gerados": nos_gerados,
+        "nos_visitados": nos_visitados,
+        "nos_visitados_lista": nos_visitados_lista
+    }
+
+import heapq
+
+def busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_custo, heuristica):
+    """
+    Implementa o algoritmo de Busca A*.
+
+    Args:
+        estado_inicial (any): O estado inicial do problema.
+        estado_objetivo (any): O estado objetivo do problema.
+        gerar_vizinhos (func): Função que retorna os estados vizinhos de um estado.
+        calcular_custo (func): Função que calcula o custo entre dois estados.
+        heuristica (func): Função heurística que avalia um estado.
+
+    Returns:
+        dict: Contendo o caminho encontrado, custo, nós gerados e nós visitados.
+    """
+    fila_prioridade = []
+    heapq.heappush(fila_prioridade, (0, estado_inicial))
+    visitados = set()
+    pais = {estado_inicial: None}
+    custos = {estado_inicial: 0}
+    profundidade = {estado_inicial: 0}
+    nos_gerados, nos_visitados = 0, 0
+    nos_visitados_lista = []  # Lista para armazenar os estados visitados
+
+    while fila_prioridade:
+        custo_f, estado_atual = heapq.heappop(fila_prioridade)
+        nos_visitados += 1
+        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
+
+        if estado_atual == estado_objetivo:
+            caminho = []
+            while estado_atual is not None:
+                caminho.append(estado_atual)
+                estado_atual = pais[estado_atual]
+            caminho.reverse()
+            return {
+                "caminho": caminho,
+                "custo": custos[estado_objetivo],
+                "nos_gerados": nos_gerados,
+                "nos_visitados": nos_visitados,
+                "nos_visitados_lista": nos_visitados_lista
+            }
 
         if estado_atual in visitados:
             continue
@@ -188,7 +337,14 @@ def busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_cu
                 heapq.heappush(fila_prioridade, (custo_f, vizinho))
                 nos_gerados += 1
 
-    return {"caminho": None, "custo": float("inf"), "nos_gerados": nos_gerados, "nos_visitados": nos_visitados}
+    return {
+        "caminho": None,
+        "custo": float("inf"),
+        "nos_gerados": nos_gerados,
+        "nos_visitados": nos_visitados,
+        "nos_visitados_lista": nos_visitados_lista
+    }
+
 
 # Função principal
 def main():
@@ -205,27 +361,27 @@ def main():
         print(f"\n--- Cenário C{i} ---")
 
         with open(arquivo_resultados, "a") as f:
-            f.write(f"\n==== Cenário C{i} ====" + "\n")
+            f.write(f"\n==== Cenário C{i} ====" + "\n\n")
         
         resultado_largura = busca_em_largura(estado_inicial, estado_objetivo, gerar_vizinhos)
         print(f"Busca em Largura: Custo: {resultado_largura['custo']}, Nós Gerados: {resultado_largura['nos_gerados']}, Nós Visitados: {resultado_largura['nos_visitados']}")
-        salvar_resultados("Busca em Largura", resultado_largura, f"C{i}", arquivo_resultados)
+        salvar_resultados("Busca em Largura", resultado_largura, arquivo_resultados)
 
         resultado_profundidade = busca_em_profundidade(estado_inicial, estado_objetivo, gerar_vizinhos)
         print(f"Busca em Profundidade: Custo: {resultado_profundidade['custo']}, Nós Gerados: {resultado_profundidade['nos_gerados']}, Nós Visitados: {resultado_profundidade['nos_visitados']}")
-        salvar_resultados("Busca em Profundidade", resultado_profundidade, f"C{i}", arquivo_resultados)
+        salvar_resultados("Busca em Profundidade", resultado_profundidade, arquivo_resultados)
 
         resultado_custo_uniforme = busca_de_custo_uniforme(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func)
         print(f"Busca de Custo Uniforme: Custo: {resultado_custo_uniforme['custo']}, Nós Gerados: {resultado_custo_uniforme['nos_gerados']}, Nós Visitados: {resultado_custo_uniforme['nos_visitados']}")
-        salvar_resultados("Busca de Custo Uniforme", resultado_custo_uniforme, f"C{i}", arquivo_resultados)
+        salvar_resultados("Busca de Custo Uniforme", resultado_custo_uniforme, arquivo_resultados)
 
-        resultado_a_estrela = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, "manhattan")
+        resultado_gulosa = busca_gulosa(estado_inicial, estado_objetivo, gerar_vizinhos, heuristica_manhattan, custo_func)
+        print(f"Busca Gulosa: Custo: {resultado_gulosa['custo']}, Nós Gerados: {resultado_gulosa['nos_gerados']}, Nós Visitados: {resultado_gulosa['nos_visitados']}")
+        salvar_resultados("Busca Gulosa", resultado_gulosa, arquivo_resultados)
+
+        resultado_a_estrela = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica_manhattan)
         print(f"Busca A*: Custo: {resultado_a_estrela['custo']}, Nós Gerados: {resultado_a_estrela['nos_gerados']}, Nós Visitados: {resultado_a_estrela['nos_visitados']}")
-        salvar_resultados("Busca A*", resultado_a_estrela, f"C{i}", arquivo_resultados)
-
-        resultado_a_estrela_euclidiana = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, "euclidiana")
-        print(f"Busca A* (Euclidiana): Custo: {resultado_a_estrela_euclidiana['custo']}, Nós Gerados: {resultado_a_estrela_euclidiana['nos_gerados']}, Nós Visitados: {resultado_a_estrela_euclidiana['nos_visitados']}")
-        salvar_resultados("Busca A* (Euclidiana)", resultado_a_estrela_euclidiana, f"C{i}", arquivo_resultados)        
+        salvar_resultados("Busca A*", resultado_a_estrela, arquivo_resultados)     
 
 if __name__ == "__main__":
     main()
