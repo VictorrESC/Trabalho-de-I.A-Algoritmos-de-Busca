@@ -1,0 +1,1802 @@
+Resultados das buscas do experimento 5:
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 330
+Nos gerados: 467
+Nos visitados: 385
+Caminho encontrado: [(13, 18), (13, 17), (13, 16), (13, 15), (13, 14), (12, 14), (11, 14), (10, 14), (9, 14), (8, 14), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 330
+Nos gerados: 121
+Nos visitados: 45
+Caminho encontrado: [(13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (8, 18), (7, 18), (7, 17), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 420
+Nos gerados: 684
+Nos visitados: 550
+Caminho encontrado: [(13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (9, 17), (9, 16), (9, 15), (9, 14), (9, 13), (8, 13), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 420
+Nos gerados: 395
+Nos visitados: 200
+Caminho encontrado: [(13, 18), (13, 17), (13, 16), (13, 15), (13, 14), (13, 13), (12, 13), (11, 13), (10, 13), (9, 13), (8, 13), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 371
+Nos gerados: 578
+Nos visitados: 447
+Caminho encontrado: [(13, 18), (12, 18), (11, 18), (11, 17), (11, 16), (11, 15), (11, 14), (10, 14), (9, 14), (8, 14), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 375
+Nos gerados: 313
+Nos visitados: 154
+Caminho encontrado: [(13, 18), (13, 17), (13, 16), (13, 15), (13, 14), (13, 13), (12, 13), (11, 13), (10, 13), (9, 13), (8, 13), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 322
+Nos gerados: 348
+Nos visitados: 245
+Caminho encontrado: [(13, 18), (13, 17), (13, 16), (13, 15), (12, 15), (11, 15), (10, 15), (9, 15), (8, 15), (8, 14), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (8, 9), (9, 9), (10, 9), (10, 8), (11, 8), (12, 8), (13, 8), (14, 8), (14, 7), (14, 6), (14, 5), (14, 4), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(18, 28), (3, 16), (26, 29), (7, 13)]
+Custo do caminho: 313
+Nos gerados: 123
+Nos visitados: 50
+Caminho encontrado: [(13, 18), (13, 17), (13, 16), (13, 15), (13, 14), (12, 14), (11, 14), (10, 14), (9, 14), (8, 14), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (8, 8), (8, 7), (9, 7), (9, 6), (10, 6), (10, 5), (11, 5), (11, 4), (12, 4), (13, 4), (14, 4), (15, 4), (16, 4), (17, 4), (17, 3), (18, 3), (19, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 320
+Nos gerados: 337
+Nos visitados: 268
+Caminho encontrado: [(3, 0), (4, 0), (5, 0), (6, 0), (7, 0), (7, 1), (7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7), (7, 8), (7, 9), (7, 10), (7, 11), (7, 12), (7, 13), (7, 14), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 320
+Nos gerados: 238
+Nos visitados: 169
+Caminho encontrado: [(3, 0), (4, 0), (5, 0), (6, 0), (7, 0), (7, 1), (7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7), (7, 8), (7, 9), (7, 10), (7, 11), (7, 12), (7, 13), (7, 14), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 360
+Nos gerados: 301
+Nos visitados: 180
+Caminho encontrado: [(3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (3, 13), (3, 14), (3, 15), (4, 15), (5, 15), (6, 15), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 380
+Nos gerados: 246
+Nos visitados: 138
+Caminho encontrado: [(3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (3, 13), (3, 14), (3, 15), (3, 16), (3, 17), (4, 17), (5, 17), (6, 17), (7, 17), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 336
+Nos gerados: 367
+Nos visitados: 236
+Caminho encontrado: [(3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (3, 13), (3, 14), (4, 14), (5, 14), (6, 14), (7, 14), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 340
+Nos gerados: 267
+Nos visitados: 127
+Caminho encontrado: [(3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (3, 13), (3, 14), (4, 14), (5, 14), (6, 14), (7, 14), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 313
+Nos gerados: 214
+Nos visitados: 120
+Caminho encontrado: [(3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (4, 9), (4, 10), (5, 10), (5, 11), (6, 11), (7, 11), (7, 12), (7, 13), (7, 14), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (7, 10), (8, 10), (9, 10), (9, 9), (10, 9), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 27), (16, 19), (7, 16), (20, 9)]
+Custo do caminho: 309
+Nos gerados: 97
+Nos visitados: 34
+Caminho encontrado: [(3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (4, 5), (4, 6), (5, 6), (5, 7), (6, 7), (6, 8), (7, 8), (7, 9), (7, 10), (7, 11), (7, 12), (7, 13), (7, 14), (7, 15), (7, 16), (7, 15), (7, 14), (7, 13), (7, 12), (7, 11), (8, 11), (8, 10), (9, 10), (9, 9), (10, 9), (10, 8), (11, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 160
+Nos gerados: 96
+Nos visitados: 60
+Caminho encontrado: [(27, 13), (26, 13), (25, 13), (24, 13), (23, 13), (22, 13), (22, 14), (22, 15), (22, 14), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (27, 13), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 160
+Nos gerados: 54
+Nos visitados: 20
+Caminho encontrado: [(27, 13), (26, 13), (25, 13), (24, 13), (23, 13), (22, 13), (22, 14), (22, 15), (22, 14), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (27, 13), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 220
+Nos gerados: 218
+Nos visitados: 146
+Caminho encontrado: [(27, 13), (26, 13), (25, 13), (24, 13), (23, 13), (22, 13), (22, 14), (22, 15), (23, 15), (24, 15), (25, 15), (26, 15), (27, 15), (28, 15), (29, 15), (29, 14), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 220
+Nos gerados: 123
+Nos visitados: 64
+Caminho encontrado: [(27, 13), (26, 13), (25, 13), (25, 14), (24, 14), (23, 14), (22, 14), (22, 15), (22, 14), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (27, 13), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 190
+Nos gerados: 134
+Nos visitados: 83
+Caminho encontrado: [(27, 13), (27, 14), (27, 15), (26, 15), (25, 15), (24, 15), (23, 15), (22, 15), (22, 14), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (27, 13), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 190
+Nos gerados: 58
+Nos visitados: 22
+Caminho encontrado: [(27, 13), (27, 14), (27, 15), (26, 15), (25, 15), (24, 15), (23, 15), (22, 15), (22, 14), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (27, 13), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 142
+Nos gerados: 84
+Nos visitados: 38
+Caminho encontrado: [(27, 13), (27, 14), (27, 15), (26, 15), (25, 15), (24, 15), (23, 15), (22, 15), (22, 14), (23, 14), (24, 14), (25, 14), (26, 14), (27, 14), (28, 14), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(8, 9), (3, 24), (18, 21), (22, 15)]
+Custo do caminho: 146
+Nos gerados: 52
+Nos visitados: 19
+Caminho encontrado: [(27, 13), (27, 14), (27, 15), (26, 15), (25, 15), (24, 15), (23, 15), (22, 15), (22, 14), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (27, 13), (28, 13), (29, 13)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 220
+Nos gerados: 102
+Nos visitados: 58
+Caminho encontrado: [(5, 4), (4, 4), (3, 4), (3, 3), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 220
+Nos gerados: 68
+Nos visitados: 24
+Caminho encontrado: [(5, 4), (4, 4), (3, 4), (3, 3), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 235
+Nos gerados: 110
+Nos visitados: 44
+Caminho encontrado: [(5, 4), (5, 3), (4, 3), (3, 3), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 235
+Nos gerados: 107
+Nos visitados: 43
+Caminho encontrado: [(5, 4), (5, 3), (4, 3), (3, 3), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 224
+Nos gerados: 91
+Nos visitados: 35
+Caminho encontrado: [(5, 4), (5, 3), (4, 3), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (3, 13), (3, 14), (3, 15), (3, 16), (3, 17), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 225
+Nos gerados: 89
+Nos visitados: 34
+Caminho encontrado: [(5, 4), (5, 3), (4, 3), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (3, 13), (3, 14), (3, 15), (3, 16), (3, 17), (3, 18), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 223
+Nos gerados: 86
+Nos visitados: 33
+Caminho encontrado: [(5, 4), (5, 3), (4, 3), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(29, 0), (27, 29), (3, 3), (0, 5)]
+Custo do caminho: 222
+Nos gerados: 70
+Nos visitados: 25
+Caminho encontrado: [(5, 4), (5, 3), (4, 3), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), (2, 18), (2, 19), (2, 20), (2, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 150
+Nos gerados: 80
+Nos visitados: 48
+Caminho encontrado: [(18, 18), (17, 18), (16, 18), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (9, 19), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 150
+Nos gerados: 51
+Nos visitados: 19
+Caminho encontrado: [(18, 18), (17, 18), (16, 18), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (9, 19), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 205
+Nos gerados: 199
+Nos visitados: 137
+Caminho encontrado: [(18, 18), (17, 18), (16, 18), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (9, 19), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 205
+Nos gerados: 135
+Nos visitados: 85
+Caminho encontrado: [(18, 18), (17, 18), (16, 18), (16, 19), (15, 19), (14, 19), (13, 19), (12, 19), (11, 19), (10, 19), (9, 19), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 175
+Nos gerados: 141
+Nos visitados: 92
+Caminho encontrado: [(18, 18), (18, 19), (17, 19), (16, 19), (15, 19), (14, 19), (13, 19), (12, 19), (11, 19), (10, 19), (9, 19), (9, 20), (10, 20), (10, 19), (11, 19), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 175
+Nos gerados: 74
+Nos visitados: 29
+Caminho encontrado: [(18, 18), (18, 19), (18, 20), (17, 20), (16, 20), (15, 20), (14, 20), (13, 20), (12, 20), (11, 20), (10, 20), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 148
+Nos gerados: 61
+Nos visitados: 24
+Caminho encontrado: [(18, 18), (17, 18), (16, 18), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (10, 19), (9, 19), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(0, 28), (9, 20), (29, 6), (8, 0)]
+Custo do caminho: 133
+Nos gerados: 49
+Nos visitados: 18
+Caminho encontrado: [(18, 18), (18, 19), (18, 20), (17, 20), (16, 20), (15, 20), (14, 20), (13, 20), (12, 20), (11, 20), (10, 20), (9, 20), (9, 19), (9, 18), (10, 18), (11, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 420
+Nos gerados: 636
+Nos visitados: 532
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (4, 9), (5, 9), (6, 9), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (17, 9), (16, 9), (15, 9), (14, 9), (13, 9), (12, 9), (11, 9), (10, 9), (9, 9), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (8, 16), (8, 17), (8, 18), (8, 19), (8, 20), (8, 21), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 420
+Nos gerados: 134
+Nos visitados: 47
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (4, 9), (5, 9), (6, 9), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (17, 9), (16, 9), (15, 9), (14, 9), (13, 9), (12, 9), (11, 9), (10, 9), (9, 9), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (8, 16), (8, 17), (8, 18), (8, 19), (8, 20), (8, 21), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 540
+Nos gerados: 978
+Nos visitados: 802
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (4, 9), (5, 9), (6, 9), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (17, 9), (16, 9), (15, 9), (14, 9), (13, 9), (12, 9), (11, 9), (10, 9), (9, 9), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (8, 16), (8, 17), (8, 18), (8, 19), (8, 20), (8, 21), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 540
+Nos gerados: 691
+Nos visitados: 517
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (4, 9), (5, 9), (6, 9), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (17, 9), (16, 9), (16, 10), (15, 10), (14, 10), (13, 10), (12, 10), (11, 10), (10, 10), (9, 10), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (8, 16), (8, 17), (8, 18), (8, 19), (8, 20), (8, 21), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 474
+Nos gerados: 763
+Nos visitados: 605
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (5, 10), (6, 10), (7, 10), (8, 10), (9, 10), (10, 10), (11, 10), (12, 10), (13, 10), (14, 10), (15, 10), (16, 10), (17, 10), (18, 10), (18, 9), (18, 10), (18, 11), (18, 12), (18, 13), (18, 14), (18, 15), (18, 16), (18, 17), (18, 18), (18, 19), (18, 20), (17, 20), (16, 20), (15, 20), (14, 20), (13, 20), (12, 20), (11, 20), (11, 21), (11, 22), (10, 22), (9, 22), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 473
+Nos gerados: 443
+Nos visitados: 231
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (5, 10), (6, 10), (7, 10), (8, 10), (9, 10), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (18, 10), (18, 11), (17, 11), (16, 11), (15, 11), (14, 11), (13, 11), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15), (12, 16), (12, 17), (12, 18), (11, 18), (10, 18), (10, 19), (10, 20), (10, 21), (9, 21), (8, 21), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 419
+Nos gerados: 323
+Nos visitados: 189
+Caminho encontrado: [(4, 12), (5, 12), (6, 12), (7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (14, 12), (15, 12), (16, 12), (16, 11), (17, 11), (18, 11), (18, 10), (18, 9), (18, 10), (18, 11), (18, 12), (18, 13), (18, 14), (18, 15), (17, 15), (16, 15), (16, 16), (15, 16), (15, 17), (14, 17), (13, 17), (12, 17), (11, 17), (11, 18), (11, 19), (11, 20), (11, 21), (11, 22), (10, 22), (9, 22), (9, 23), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 3), (23, 6), (18, 9), (27, 12)]
+Custo do caminho: 404
+Nos gerados: 128
+Nos visitados: 44
+Caminho encontrado: [(4, 12), (4, 11), (4, 10), (4, 9), (5, 9), (6, 9), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (18, 10), (18, 11), (18, 12), (18, 13), (17, 13), (16, 13), (15, 13), (14, 13), (13, 13), (12, 13), (11, 13), (10, 13), (9, 13), (8, 13), (8, 14), (8, 15), (8, 16), (8, 17), (8, 18), (8, 19), (8, 20), (8, 21), (8, 22), (8, 23), (8, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 380
+Nos gerados: 371
+Nos visitados: 299
+Caminho encontrado: [(30, 27), (29, 27), (28, 27), (27, 27), (26, 27), (25, 27), (24, 27), (23, 27), (22, 27), (21, 27), (20, 27), (19, 27), (18, 27), (17, 27), (16, 27), (15, 27), (15, 28), (15, 29), (15, 30), (15, 29), (15, 28), (15, 27), (15, 26), (15, 25), (15, 24), (15, 23), (15, 22), (15, 21), (15, 20), (15, 19), (15, 18), (15, 17), (14, 17), (13, 17), (12, 17), (11, 17), (10, 17), (9, 17), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 380
+Nos gerados: 108
+Nos visitados: 40
+Caminho encontrado: [(30, 27), (29, 27), (28, 27), (27, 27), (26, 27), (25, 27), (24, 27), (23, 27), (22, 27), (21, 27), (20, 27), (19, 27), (18, 27), (17, 27), (16, 27), (15, 27), (15, 28), (15, 29), (15, 30), (14, 30), (13, 30), (12, 30), (11, 30), (10, 30), (9, 30), (9, 29), (9, 28), (9, 27), (9, 26), (9, 25), (9, 24), (9, 23), (9, 22), (9, 21), (9, 20), (9, 19), (9, 18), (9, 17), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 485
+Nos gerados: 519
+Nos visitados: 430
+Caminho encontrado: [(30, 27), (29, 27), (28, 27), (27, 27), (26, 27), (25, 27), (24, 27), (23, 27), (22, 27), (21, 27), (20, 27), (19, 27), (18, 27), (17, 27), (16, 27), (15, 27), (15, 28), (15, 29), (15, 30), (14, 30), (13, 30), (12, 30), (11, 30), (11, 29), (11, 28), (11, 27), (11, 26), (11, 25), (11, 24), (11, 23), (11, 22), (11, 21), (11, 20), (11, 19), (11, 18), (11, 17), (11, 16), (10, 16), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 485
+Nos gerados: 297
+Nos visitados: 202
+Caminho encontrado: [(30, 27), (29, 27), (28, 27), (28, 28), (27, 28), (26, 28), (25, 28), (24, 28), (23, 28), (22, 28), (21, 28), (20, 28), (19, 28), (18, 28), (17, 28), (16, 28), (15, 28), (15, 29), (15, 30), (15, 29), (15, 28), (15, 27), (15, 26), (15, 25), (15, 24), (15, 23), (15, 22), (15, 21), (15, 20), (15, 19), (15, 18), (15, 17), (15, 16), (14, 16), (13, 16), (12, 16), (11, 16), (10, 16), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 431
+Nos gerados: 445
+Nos visitados: 351
+Caminho encontrado: [(30, 27), (30, 28), (30, 29), (29, 29), (28, 29), (27, 29), (26, 29), (25, 29), (24, 29), (23, 29), (22, 29), (21, 29), (20, 29), (19, 29), (18, 29), (18, 30), (17, 30), (16, 30), (15, 30), (15, 29), (15, 28), (15, 27), (15, 26), (15, 25), (15, 24), (15, 23), (15, 22), (15, 21), (15, 20), (15, 19), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (9, 17), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 431
+Nos gerados: 228
+Nos visitados: 119
+Caminho encontrado: [(30, 27), (30, 28), (30, 29), (29, 29), (28, 29), (27, 29), (26, 29), (25, 29), (24, 29), (23, 29), (22, 29), (21, 29), (20, 29), (19, 29), (18, 29), (18, 30), (17, 30), (16, 30), (15, 30), (15, 29), (15, 28), (15, 27), (15, 26), (15, 25), (15, 24), (15, 23), (15, 22), (15, 21), (15, 20), (15, 19), (15, 18), (15, 17), (15, 16), (14, 16), (13, 16), (12, 16), (11, 16), (10, 16), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 362
+Nos gerados: 225
+Nos visitados: 116
+Caminho encontrado: [(30, 27), (29, 27), (28, 27), (27, 27), (26, 27), (25, 27), (24, 27), (23, 27), (22, 27), (21, 27), (20, 27), (19, 27), (18, 27), (17, 27), (16, 27), (15, 27), (15, 28), (15, 29), (15, 30), (15, 29), (15, 28), (15, 27), (15, 26), (14, 26), (14, 25), (14, 24), (14, 23), (13, 23), (13, 22), (12, 22), (12, 21), (11, 21), (10, 21), (9, 21), (9, 20), (9, 19), (9, 18), (9, 17), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 30), (29, 1), (0, 28), (17, 1)]
+Custo do caminho: 359
+Nos gerados: 96
+Nos visitados: 40
+Caminho encontrado: [(30, 27), (30, 28), (30, 29), (30, 30), (29, 30), (28, 30), (27, 30), (26, 30), (25, 30), (24, 30), (23, 30), (22, 30), (21, 30), (20, 30), (19, 30), (18, 30), (17, 30), (16, 30), (15, 30), (15, 29), (15, 28), (15, 27), (15, 26), (14, 26), (13, 26), (12, 26), (11, 26), (10, 26), (9, 26), (9, 25), (9, 24), (9, 23), (9, 22), (9, 21), (9, 20), (9, 19), (9, 18), (9, 17), (9, 16)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 260
+Nos gerados: 203
+Nos visitados: 141
+Caminho encontrado: [(17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (16, 2), (15, 2), (14, 2), (14, 1), (15, 1), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 260
+Nos gerados: 105
+Nos visitados: 51
+Caminho encontrado: [(17, 16), (16, 16), (15, 16), (14, 16), (14, 15), (14, 14), (14, 13), (14, 12), (14, 11), (14, 10), (14, 9), (14, 8), (14, 7), (14, 6), (14, 5), (14, 4), (14, 3), (14, 2), (14, 1), (15, 1), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 285
+Nos gerados: 227
+Nos visitados: 117
+Caminho encontrado: [(17, 16), (16, 16), (15, 16), (15, 15), (15, 14), (15, 13), (15, 12), (15, 11), (15, 10), (15, 9), (15, 8), (15, 7), (15, 6), (15, 5), (15, 4), (15, 3), (15, 2), (15, 1), (14, 1), (14, 2), (14, 3), (14, 4), (14, 5), (14, 6), (14, 7), (15, 7), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 285
+Nos gerados: 163
+Nos visitados: 84
+Caminho encontrado: [(17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1), (16, 1), (15, 1), (14, 1), (15, 1), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 275
+Nos gerados: 209
+Nos visitados: 104
+Caminho encontrado: [(17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1), (16, 1), (15, 1), (14, 1), (14, 2), (14, 3), (14, 4), (14, 5), (14, 6), (14, 7), (15, 7), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 275
+Nos gerados: 130
+Nos visitados: 55
+Caminho encontrado: [(17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1), (16, 1), (15, 1), (14, 1), (14, 2), (14, 3), (14, 4), (14, 5), (14, 6), (14, 7), (15, 7), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 248
+Nos gerados: 122
+Nos visitados: 52
+Caminho encontrado: [(17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (16, 7), (16, 6), (15, 6), (15, 5), (14, 5), (14, 4), (14, 3), (14, 2), (14, 1), (14, 2), (14, 3), (14, 4), (14, 5), (15, 5), (15, 6), (15, 7), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 1), (20, 24), (26, 12), (29, 10)]
+Custo do caminho: 254
+Nos gerados: 86
+Nos visitados: 30
+Caminho encontrado: [(17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (26, 11), (26, 10), (26, 9), (26, 8), (25, 8), (24, 8), (23, 8), (22, 8), (21, 8), (20, 8), (19, 8), (18, 8), (17, 8), (16, 8), (16, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 300
+Nos gerados: 305
+Nos visitados: 231
+Caminho encontrado: [(16, 3), (17, 3), (18, 3), (19, 3), (20, 3), (21, 3), (21, 4), (21, 5), (21, 6), (21, 7), (21, 8), (21, 9), (21, 10), (21, 11), (21, 12), (21, 13), (21, 14), (21, 13), (21, 12), (21, 11), (21, 10), (21, 9), (21, 8), (21, 7), (21, 6), (21, 5), (21, 4), (20, 4), (19, 4), (18, 4), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 300
+Nos gerados: 203
+Nos visitados: 141
+Caminho encontrado: [(16, 3), (17, 3), (18, 3), (19, 3), (20, 3), (21, 3), (21, 4), (21, 5), (21, 6), (21, 7), (21, 8), (21, 9), (21, 10), (21, 11), (21, 12), (21, 13), (21, 14), (20, 14), (19, 14), (18, 14), (18, 13), (18, 12), (18, 11), (18, 10), (18, 9), (18, 8), (18, 7), (18, 6), (18, 5), (18, 4), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 340
+Nos gerados: 336
+Nos visitados: 203
+Caminho encontrado: [(16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (17, 13), (18, 13), (19, 13), (20, 13), (21, 13), (21, 14), (20, 14), (19, 14), (19, 13), (19, 12), (19, 11), (19, 10), (19, 9), (19, 8), (19, 7), (19, 6), (19, 5), (19, 4), (19, 3), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 360
+Nos gerados: 274
+Nos visitados: 168
+Caminho encontrado: [(16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (16, 14), (16, 15), (17, 15), (18, 15), (19, 15), (20, 15), (21, 15), (21, 14), (21, 13), (21, 12), (21, 11), (21, 10), (21, 9), (21, 8), (21, 7), (21, 6), (21, 5), (21, 4), (21, 3), (20, 3), (19, 3), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 313
+Nos gerados: 283
+Nos visitados: 171
+Caminho encontrado: [(16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (16, 14), (17, 14), (18, 14), (19, 14), (20, 14), (21, 14), (21, 13), (21, 12), (21, 11), (21, 10), (21, 9), (21, 8), (21, 7), (21, 6), (21, 5), (21, 4), (21, 3), (20, 3), (19, 3), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 313
+Nos gerados: 148
+Nos visitados: 62
+Caminho encontrado: [(16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (16, 14), (17, 14), (18, 14), (19, 14), (20, 14), (21, 14), (21, 13), (21, 12), (21, 11), (21, 10), (21, 9), (21, 8), (21, 7), (21, 6), (21, 5), (21, 4), (21, 3), (20, 3), (19, 3), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 290
+Nos gerados: 131
+Nos visitados: 55
+Caminho encontrado: [(16, 3), (16, 4), (16, 5), (16, 6), (17, 6), (17, 7), (17, 8), (17, 9), (17, 10), (18, 10), (18, 11), (19, 11), (19, 12), (20, 12), (21, 12), (21, 13), (21, 14), (21, 13), (21, 12), (21, 11), (21, 10), (21, 9), (21, 8), (21, 7), (20, 7), (20, 6), (19, 6), (19, 5), (18, 5), (18, 4), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(10, 21), (7, 13), (21, 14), (11, 22)]
+Custo do caminho: 275
+Nos gerados: 92
+Nos visitados: 32
+Caminho encontrado: [(16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (17, 8), (17, 9), (18, 9), (18, 10), (19, 10), (19, 11), (20, 11), (20, 12), (21, 12), (21, 13), (21, 14), (21, 13), (21, 12), (21, 11), (21, 10), (20, 10), (19, 10), (18, 10), (18, 9), (18, 8), (18, 7), (18, 6), (18, 5), (18, 4), (18, 3)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 320
+Nos gerados: 301
+Nos visitados: 227
+Caminho encontrado: [(26, 17), (25, 17), (24, 17), (23, 17), (22, 17), (21, 17), (20, 17), (19, 17), (18, 17), (17, 17), (16, 17), (15, 17), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (8, 18), (7, 18), (6, 18), (5, 18), (4, 18), (3, 18), (2, 18), (1, 18), (1, 19), (1, 20), (1, 21), (1, 22), (1, 23), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 320
+Nos gerados: 98
+Nos visitados: 34
+Caminho encontrado: [(26, 17), (25, 17), (24, 17), (23, 17), (22, 17), (21, 17), (20, 17), (19, 17), (18, 17), (17, 17), (16, 17), (15, 17), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (8, 18), (7, 18), (6, 18), (5, 18), (4, 18), (3, 18), (2, 18), (1, 18), (1, 19), (1, 20), (1, 21), (1, 22), (1, 23), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 445
+Nos gerados: 695
+Nos visitados: 551
+Caminho encontrado: [(26, 17), (25, 17), (24, 17), (23, 17), (22, 17), (21, 17), (20, 17), (19, 17), (18, 17), (17, 17), (16, 17), (15, 17), (15, 18), (14, 18), (13, 18), (12, 18), (11, 18), (10, 18), (9, 18), (8, 18), (7, 18), (6, 18), (5, 18), (4, 18), (3, 18), (2, 18), (1, 18), (1, 19), (1, 20), (1, 21), (1, 22), (1, 23), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 445
+Nos gerados: 481
+Nos visitados: 372
+Caminho encontrado: [(26, 17), (25, 17), (24, 17), (24, 18), (23, 18), (22, 18), (21, 18), (20, 18), (19, 18), (18, 18), (17, 18), (16, 18), (15, 18), (14, 18), (13, 18), (13, 19), (12, 19), (11, 19), (10, 19), (9, 19), (8, 19), (7, 19), (6, 19), (5, 19), (4, 19), (3, 19), (2, 19), (1, 19), (1, 20), (1, 21), (1, 22), (1, 23), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 381
+Nos gerados: 382
+Nos visitados: 269
+Caminho encontrado: [(26, 17), (26, 18), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (25, 23), (24, 23), (23, 23), (22, 23), (21, 23), (20, 23), (19, 23), (18, 23), (17, 23), (16, 23), (16, 24), (15, 24), (14, 24), (13, 24), (12, 24), (11, 24), (10, 24), (9, 24), (8, 24), (7, 24), (6, 24), (5, 24), (4, 24), (3, 24), (2, 24), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 381
+Nos gerados: 277
+Nos visitados: 134
+Caminho encontrado: [(26, 17), (26, 18), (25, 18), (24, 18), (23, 18), (22, 18), (21, 18), (20, 18), (19, 18), (18, 18), (17, 18), (16, 18), (15, 18), (15, 19), (15, 20), (14, 20), (13, 20), (12, 20), (11, 20), (10, 20), (9, 20), (8, 20), (7, 20), (6, 20), (5, 20), (4, 20), (3, 20), (3, 21), (2, 21), (1, 21), (1, 22), (1, 23), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 309
+Nos gerados: 160
+Nos visitados: 74
+Caminho encontrado: [(26, 17), (26, 18), (26, 19), (26, 20), (25, 20), (24, 20), (23, 20), (22, 20), (21, 20), (20, 20), (19, 20), (19, 21), (18, 21), (18, 22), (17, 22), (16, 22), (16, 23), (16, 24), (15, 24), (14, 24), (13, 24), (12, 24), (11, 24), (10, 24), (9, 24), (8, 24), (7, 24), (6, 24), (5, 24), (4, 24), (3, 24), (2, 24), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(25, 6), (15, 18), (16, 24), (18, 5)]
+Custo do caminho: 302
+Nos gerados: 98
+Nos visitados: 34
+Caminho encontrado: [(26, 17), (26, 18), (26, 19), (26, 20), (26, 21), (25, 21), (24, 21), (23, 21), (22, 21), (21, 21), (20, 21), (19, 21), (18, 21), (17, 21), (16, 21), (16, 22), (16, 23), (16, 24), (15, 24), (14, 24), (13, 24), (12, 24), (11, 24), (10, 24), (9, 24), (8, 24), (7, 24), (6, 24), (5, 24), (4, 24), (3, 24), (2, 24), (1, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 270
+Nos gerados: 266
+Nos visitados: 198
+Caminho encontrado: [(22, 12), (22, 11), (22, 10), (22, 9), (22, 8), (22, 7), (21, 7), (20, 7), (19, 7), (18, 7), (17, 7), (16, 7), (15, 7), (15, 6), (15, 5), (15, 4), (15, 3), (15, 2), (14, 2), (13, 2), (12, 2), (11, 2), (10, 2), (9, 2), (8, 2), (7, 2), (6, 2), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(22, 12), (21, 12), (20, 12), (19, 12), (18, 12), (17, 12), (16, 12), (15, 12), (15, 11), (15, 10), (15, 9), (15, 8), (15, 7), (15, 6), (14, 6), (13, 6), (12, 6), (11, 6), (10, 6), (9, 6), (8, 6), (7, 6), (6, 6), (6, 5), (6, 4), (6, 3), (6, 2), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 350
+Nos gerados: 437
+Nos visitados: 337
+Caminho encontrado: [(22, 12), (21, 12), (20, 12), (19, 12), (18, 12), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (16, 6), (15, 6), (14, 6), (13, 6), (13, 5), (12, 5), (11, 5), (10, 5), (10, 4), (10, 3), (10, 2), (9, 2), (9, 1), (8, 1), (7, 1), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 350
+Nos gerados: 193
+Nos visitados: 91
+Caminho encontrado: [(22, 12), (22, 11), (22, 10), (22, 9), (22, 8), (22, 7), (22, 6), (21, 6), (20, 6), (19, 6), (18, 6), (17, 6), (16, 6), (15, 6), (15, 5), (15, 4), (15, 3), (15, 2), (15, 1), (14, 1), (13, 1), (12, 1), (11, 1), (10, 1), (9, 1), (8, 1), (7, 1), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 311
+Nos gerados: 359
+Nos visitados: 266
+Caminho encontrado: [(22, 12), (22, 11), (22, 10), (22, 9), (22, 8), (22, 7), (22, 6), (21, 6), (20, 6), (19, 6), (18, 6), (17, 6), (16, 6), (15, 6), (15, 5), (15, 4), (15, 3), (15, 2), (15, 1), (14, 1), (13, 1), (12, 1), (11, 1), (10, 1), (9, 1), (8, 1), (7, 1), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 311
+Nos gerados: 183
+Nos visitados: 74
+Caminho encontrado: [(22, 12), (22, 11), (22, 10), (22, 9), (22, 8), (22, 7), (22, 6), (21, 6), (20, 6), (19, 6), (18, 6), (17, 6), (16, 6), (15, 6), (15, 5), (15, 4), (15, 3), (15, 2), (15, 1), (14, 1), (13, 1), (12, 1), (11, 1), (10, 1), (9, 1), (8, 1), (7, 1), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 261
+Nos gerados: 111
+Nos visitados: 45
+Caminho encontrado: [(22, 12), (22, 11), (22, 10), (22, 9), (21, 9), (20, 9), (19, 9), (18, 9), (17, 9), (17, 8), (16, 8), (16, 7), (15, 7), (15, 6), (15, 5), (15, 4), (14, 4), (13, 4), (12, 4), (11, 4), (10, 4), (9, 4), (8, 4), (8, 3), (7, 3), (7, 2), (6, 2), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(15, 6), (26, 19), (0, 23), (5, 9)]
+Custo do caminho: 248
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(22, 12), (22, 11), (22, 10), (22, 9), (22, 8), (21, 8), (20, 8), (19, 8), (18, 8), (17, 8), (16, 8), (15, 8), (15, 7), (15, 6), (15, 5), (15, 4), (15, 3), (15, 2), (14, 2), (13, 2), (12, 2), (11, 2), (10, 2), (9, 2), (8, 2), (7, 2), (6, 2), (6, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 370
+Nos gerados: 505
+Nos visitados: 427
+Caminho encontrado: [(16, 0), (17, 0), (18, 0), (19, 0), (20, 0), (21, 0), (22, 0), (23, 0), (24, 0), (24, 1), (24, 2), (24, 3), (24, 4), (24, 5), (24, 6), (24, 7), (24, 8), (24, 9), (24, 10), (24, 11), (24, 12), (24, 13), (24, 14), (25, 14), (26, 14), (27, 14), (28, 14), (28, 15), (28, 16), (28, 17), (28, 18), (28, 19), (28, 20), (28, 21), (28, 22), (28, 23), (28, 24), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 370
+Nos gerados: 418
+Nos visitados: 349
+Caminho encontrado: [(16, 0), (17, 0), (18, 0), (19, 0), (20, 0), (21, 0), (22, 0), (23, 0), (24, 0), (24, 1), (24, 2), (24, 3), (24, 4), (24, 5), (24, 6), (24, 7), (24, 8), (24, 9), (24, 10), (24, 11), (24, 12), (24, 13), (24, 14), (25, 14), (26, 14), (27, 14), (28, 14), (28, 15), (28, 16), (28, 17), (28, 18), (28, 19), (28, 20), (28, 21), (28, 22), (28, 23), (28, 24), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 430
+Nos gerados: 546
+Nos visitados: 413
+Caminho encontrado: [(16, 0), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (24, 13), (24, 14), (24, 15), (24, 16), (24, 17), (24, 18), (24, 19), (24, 20), (24, 21), (24, 22), (24, 23), (24, 24), (25, 24), (26, 24), (27, 24), (28, 24), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 450
+Nos gerados: 726
+Nos visitados: 564
+Caminho encontrado: [(16, 0), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (16, 14), (16, 15), (16, 16), (16, 17), (16, 18), (16, 19), (16, 20), (16, 21), (16, 22), (16, 23), (16, 24), (16, 25), (16, 26), (17, 26), (18, 26), (19, 26), (20, 26), (21, 26), (22, 26), (23, 26), (24, 26), (25, 26), (26, 26), (27, 26), (28, 26), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 396
+Nos gerados: 468
+Nos visitados: 349
+Caminho encontrado: [(16, 0), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (16, 14), (17, 14), (18, 14), (19, 14), (20, 14), (21, 14), (22, 14), (23, 14), (24, 14), (24, 15), (24, 16), (24, 17), (24, 18), (24, 19), (24, 20), (24, 21), (24, 22), (24, 23), (24, 24), (24, 25), (25, 25), (26, 25), (27, 25), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 396
+Nos gerados: 307
+Nos visitados: 142
+Caminho encontrado: [(16, 0), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (16, 10), (16, 11), (16, 12), (16, 13), (16, 14), (17, 14), (18, 14), (19, 14), (20, 14), (21, 14), (22, 14), (23, 14), (24, 14), (24, 15), (24, 16), (24, 17), (24, 18), (24, 19), (24, 20), (24, 21), (24, 22), (24, 23), (24, 24), (24, 25), (25, 25), (26, 25), (27, 25), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 353
+Nos gerados: 321
+Nos visitados: 212
+Caminho encontrado: [(16, 0), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (16, 6), (17, 6), (17, 7), (18, 7), (18, 8), (19, 8), (19, 9), (20, 9), (20, 10), (20, 11), (20, 12), (20, 13), (20, 14), (21, 14), (22, 14), (23, 14), (24, 14), (24, 15), (24, 16), (24, 17), (24, 18), (24, 19), (24, 20), (24, 21), (25, 21), (25, 22), (26, 22), (26, 23), (27, 23), (27, 24), (28, 24), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(2, 10), (24, 14), (8, 8), (16, 4)]
+Custo do caminho: 346
+Nos gerados: 144
+Nos visitados: 62
+Caminho encontrado: [(16, 0), (16, 1), (16, 2), (16, 3), (16, 4), (16, 5), (17, 5), (17, 6), (18, 6), (18, 7), (19, 7), (19, 8), (20, 8), (20, 9), (21, 9), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (23, 14), (24, 14), (24, 15), (24, 16), (24, 17), (24, 18), (24, 19), (25, 19), (25, 20), (26, 20), (26, 21), (27, 21), (27, 22), (28, 22), (28, 23), (28, 24), (28, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 130
+Nos gerados: 98
+Nos visitados: 66
+Caminho encontrado: [(7, 10), (8, 10), (9, 10), (10, 10), (11, 10), (12, 10), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 130
+Nos gerados: 84
+Nos visitados: 56
+Caminho encontrado: [(7, 10), (8, 10), (9, 10), (10, 10), (11, 10), (12, 10), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 170
+Nos gerados: 141
+Nos visitados: 90
+Caminho encontrado: [(7, 10), (7, 11), (7, 12), (7, 13), (8, 13), (9, 13), (10, 13), (11, 13), (12, 13), (13, 13), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 170
+Nos gerados: 136
+Nos visitados: 92
+Caminho encontrado: [(7, 10), (8, 10), (9, 10), (10, 10), (11, 10), (12, 10), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 147
+Nos gerados: 123
+Nos visitados: 81
+Caminho encontrado: [(7, 10), (7, 11), (7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (14, 12), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 147
+Nos gerados: 69
+Nos visitados: 33
+Caminho encontrado: [(7, 10), (7, 11), (7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (14, 12), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 120
+Nos gerados: 59
+Nos visitados: 25
+Caminho encontrado: [(7, 10), (7, 11), (7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (13, 13), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 13), (6, 6), (4, 18), (28, 24)]
+Custo do caminho: 114
+Nos gerados: 41
+Nos visitados: 15
+Caminho encontrado: [(7, 10), (7, 11), (7, 12), (7, 13), (8, 13), (9, 13), (10, 13), (11, 13), (12, 13), (13, 13), (14, 13), (14, 12), (14, 11), (15, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 90
+Nos gerados: 37
+Nos visitados: 19
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (8, 9), (8, 8), (7, 8), (6, 8), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 90
+Nos gerados: 33
+Nos visitados: 13
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (7, 10), (6, 10), (6, 9), (6, 8), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 110
+Nos gerados: 48
+Nos visitados: 22
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (8, 9), (8, 8), (8, 7), (7, 7), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 110
+Nos gerados: 39
+Nos visitados: 16
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (8, 9), (8, 8), (8, 7), (7, 7), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 97
+Nos gerados: 55
+Nos visitados: 25
+Caminho encontrado: [(6, 12), (7, 12), (7, 11), (8, 11), (8, 10), (8, 9), (7, 9), (6, 9), (6, 8), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 96
+Nos gerados: 42
+Nos visitados: 18
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (8, 9), (8, 8), (8, 7), (7, 7), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 86
+Nos gerados: 39
+Nos visitados: 18
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (8, 9), (8, 8), (8, 7), (7, 7), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(23, 28), (1, 16), (21, 25), (8, 10)]
+Custo do caminho: 86
+Nos gerados: 31
+Nos visitados: 12
+Caminho encontrado: [(6, 12), (6, 11), (6, 10), (7, 10), (8, 10), (8, 9), (8, 8), (8, 7), (7, 7), (6, 7)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 230
+Nos gerados: 228
+Nos visitados: 176
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 230
+Nos gerados: 84
+Nos visitados: 33
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 305
+Nos gerados: 358
+Nos visitados: 267
+Caminho encontrado: [(0, 22), (1, 22), (2, 22), (3, 22), (4, 22), (5, 22), (6, 22), (6, 21), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 305
+Nos gerados: 198
+Nos visitados: 95
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 263
+Nos gerados: 262
+Nos visitados: 190
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 263
+Nos gerados: 124
+Nos visitados: 54
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 220
+Nos gerados: 122
+Nos visitados: 57
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (7, 17), (8, 17), (9, 17), (10, 17), (11, 17), (12, 17), (12, 16), (13, 16), (13, 15), (14, 15), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 20), (24, 5), (21, 6), (4, 7)]
+Custo do caminho: 229
+Nos gerados: 70
+Nos visitados: 26
+Caminho encontrado: [(0, 22), (0, 21), (0, 20), (1, 20), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (6, 19), (6, 18), (6, 17), (6, 16), (6, 15), (7, 15), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 130
+Nos gerados: 56
+Nos visitados: 30
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (18, 27), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (16, 22), (15, 22), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 130
+Nos gerados: 38
+Nos visitados: 15
+Caminho encontrado: [(19, 30), (18, 30), (17, 30), (17, 29), (17, 28), (17, 27), (17, 26), (16, 26), (15, 26), (15, 25), (15, 24), (15, 23), (15, 22), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 150
+Nos gerados: 71
+Nos visitados: 34
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (19, 26), (18, 26), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (16, 21), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 150
+Nos gerados: 57
+Nos visitados: 24
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (19, 26), (18, 26), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (16, 21), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 142
+Nos gerados: 76
+Nos visitados: 38
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (19, 26), (18, 26), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (16, 21), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 142
+Nos gerados: 59
+Nos visitados: 25
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (19, 26), (18, 26), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (16, 21), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 121
+Nos gerados: 55
+Nos visitados: 25
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (19, 26), (18, 26), (17, 26), (17, 25), (17, 24), (17, 23), (16, 23), (16, 22), (15, 22), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 26), (21, 21), (0, 26), (30, 27)]
+Custo do caminho: 122
+Nos gerados: 40
+Nos visitados: 15
+Caminho encontrado: [(19, 30), (19, 29), (19, 28), (19, 27), (19, 26), (18, 26), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (16, 22), (15, 22), (15, 21)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 130
+Nos gerados: 83
+Nos visitados: 53
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (11, 5), (11, 4), (11, 3), (11, 2), (10, 2), (9, 2), (8, 2), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 130
+Nos gerados: 41
+Nos visitados: 15
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (10, 9), (9, 9), (8, 9), (8, 8), (8, 7), (8, 6), (8, 5), (8, 4), (8, 3), (8, 2), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 145
+Nos gerados: 110
+Nos visitados: 61
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (10, 9), (9, 9), (9, 8), (9, 7), (9, 6), (9, 5), (9, 4), (9, 3), (9, 2), (9, 1), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 145
+Nos gerados: 57
+Nos visitados: 23
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (11, 5), (11, 4), (11, 3), (11, 2), (11, 1), (10, 1), (9, 1), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 142
+Nos gerados: 96
+Nos visitados: 54
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (11, 5), (11, 4), (11, 3), (11, 2), (10, 2), (9, 2), (8, 2), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 139
+Nos gerados: 60
+Nos visitados: 25
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (11, 5), (11, 4), (11, 3), (11, 2), (11, 1), (10, 1), (9, 1), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 118
+Nos gerados: 53
+Nos visitados: 23
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (11, 5), (11, 4), (11, 3), (10, 3), (9, 3), (9, 2), (8, 2), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(6, 22), (25, 17), (11, 9), (12, 29)]
+Custo do caminho: 121
+Nos gerados: 41
+Nos visitados: 15
+Caminho encontrado: [(11, 11), (11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (11, 5), (10, 5), (9, 5), (8, 5), (8, 4), (8, 3), (8, 2), (8, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 220
+Nos gerados: 158
+Nos visitados: 109
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (12, 8), (12, 9), (12, 10), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 220
+Nos gerados: 91
+Nos visitados: 42
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (12, 8), (12, 9), (12, 10), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 275
+Nos gerados: 244
+Nos visitados: 168
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (12, 8), (12, 9), (12, 10), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 275
+Nos gerados: 169
+Nos visitados: 90
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (12, 8), (12, 9), (12, 10), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 245
+Nos gerados: 340
+Nos visitados: 284
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (1, 8), (1, 9), (1, 10), (1, 11), (1, 12), (2, 12), (3, 12), (4, 12), (5, 12), (6, 12), (7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 248
+Nos gerados: 216
+Nos visitados: 110
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (1, 8), (1, 9), (2, 9), (3, 9), (4, 9), (5, 9), (6, 9), (7, 9), (7, 10), (7, 11), (7, 12), (7, 13), (7, 14), (7, 15), (8, 15), (9, 15), (10, 15), (11, 15), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 204
+Nos gerados: 229
+Nos visitados: 156
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (1, 8), (1, 9), (1, 10), (2, 10), (3, 10), (4, 10), (5, 10), (6, 10), (7, 10), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 0), (17, 1), (11, 7), (1, 7)]
+Custo do caminho: 201
+Nos gerados: 68
+Nos visitados: 24
+Caminho encontrado: [(1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (11, 8), (11, 9), (11, 10), (11, 11), (11, 12), (12, 12), (12, 13), (12, 14), (12, 15)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 220
+Nos gerados: 257
+Nos visitados: 203
+Caminho encontrado: [(8, 4), (9, 4), (10, 4), (11, 4), (12, 4), (13, 4), (14, 4), (14, 5), (14, 6), (14, 7), (14, 8), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14), (14, 15), (13, 15), (12, 15), (12, 16), (12, 17), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 220
+Nos gerados: 201
+Nos visitados: 155
+Caminho encontrado: [(8, 4), (9, 4), (10, 4), (11, 4), (12, 4), (13, 4), (14, 4), (14, 5), (14, 6), (14, 7), (14, 8), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14), (14, 15), (13, 15), (12, 15), (12, 16), (12, 17), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 260
+Nos gerados: 273
+Nos visitados: 181
+Caminho encontrado: [(8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (14, 15), (14, 16), (14, 17), (14, 18), (13, 18), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 280
+Nos gerados: 297
+Nos visitados: 199
+Caminho encontrado: [(8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (8, 16), (9, 16), (10, 16), (11, 16), (12, 16), (13, 16), (14, 16), (14, 15), (13, 15), (12, 15), (12, 16), (12, 17), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 238
+Nos gerados: 243
+Nos visitados: 167
+Caminho encontrado: [(8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (9, 15), (10, 15), (11, 15), (12, 15), (13, 15), (14, 15), (14, 16), (13, 16), (12, 16), (12, 17), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 230
+Nos gerados: 131
+Nos visitados: 54
+Caminho encontrado: [(8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (8, 10), (8, 11), (8, 12), (8, 13), (8, 14), (8, 15), (9, 15), (10, 15), (11, 15), (12, 15), (13, 15), (14, 15), (14, 16), (14, 17), (14, 18), (13, 18), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 197
+Nos gerados: 136
+Nos visitados: 71
+Caminho encontrado: [(8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (8, 10), (9, 10), (9, 11), (10, 11), (10, 12), (11, 12), (12, 12), (12, 13), (13, 13), (14, 13), (14, 14), (14, 15), (14, 16), (14, 17), (14, 18), (13, 18), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(14, 15), (4, 17), (28, 30), (18, 18)]
+Custo do caminho: 198
+Nos gerados: 77
+Nos visitados: 29
+Caminho encontrado: [(8, 4), (8, 5), (8, 6), (8, 7), (8, 8), (8, 9), (9, 9), (9, 10), (10, 10), (10, 11), (11, 11), (11, 12), (12, 12), (12, 13), (13, 13), (14, 13), (14, 14), (14, 15), (14, 16), (14, 17), (14, 18), (13, 18), (12, 18)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 140
+Nos gerados: 74
+Nos visitados: 41
+Caminho encontrado: [(29, 22), (29, 21), (29, 20), (29, 19), (28, 19), (27, 19), (26, 19), (26, 18), (27, 18), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 140
+Nos gerados: 57
+Nos visitados: 27
+Caminho encontrado: [(29, 22), (28, 22), (27, 22), (26, 22), (26, 21), (26, 20), (26, 19), (26, 18), (27, 18), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 160
+Nos gerados: 95
+Nos visitados: 51
+Caminho encontrado: [(29, 22), (28, 22), (27, 22), (27, 21), (27, 20), (27, 19), (27, 18), (26, 18), (27, 18), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 160
+Nos gerados: 65
+Nos visitados: 26
+Caminho encontrado: [(29, 22), (29, 21), (29, 20), (29, 19), (29, 18), (28, 18), (27, 18), (26, 18), (27, 18), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 146
+Nos gerados: 79
+Nos visitados: 39
+Caminho encontrado: [(29, 22), (28, 22), (27, 22), (27, 21), (27, 20), (27, 19), (27, 18), (26, 18), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (26, 24), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 150
+Nos gerados: 62
+Nos visitados: 25
+Caminho encontrado: [(29, 22), (29, 21), (29, 20), (29, 19), (29, 18), (28, 18), (27, 18), (26, 18), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (26, 24), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 138
+Nos gerados: 56
+Nos visitados: 23
+Caminho encontrado: [(29, 22), (29, 21), (29, 20), (29, 19), (28, 19), (27, 19), (26, 19), (26, 18), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (27, 23), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(21, 10), (27, 8), (26, 18), (4, 23)]
+Custo do caminho: 135
+Nos gerados: 44
+Nos visitados: 16
+Caminho encontrado: [(29, 22), (29, 21), (29, 20), (29, 19), (29, 18), (28, 18), (27, 18), (26, 18), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (27, 23), (27, 24)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 210
+Nos gerados: 61
+Nos visitados: 23
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 210
+Nos gerados: 61
+Nos visitados: 23
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 295
+Nos gerados: 336
+Nos visitados: 248
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 295
+Nos gerados: 222
+Nos visitados: 152
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 246
+Nos gerados: 146
+Nos visitados: 90
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 246
+Nos gerados: 102
+Nos visitados: 52
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 198
+Nos gerados: 61
+Nos visitados: 23
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(3, 29), (20, 25), (30, 12), (6, 5)]
+Custo do caminho: 198
+Nos gerados: 61
+Nos visitados: 23
+Caminho encontrado: [(13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (28, 12), (29, 12), (30, 12), (30, 11), (30, 10), (30, 9), (30, 8)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 370
+Nos gerados: 575
+Nos visitados: 491
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (3, 20), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (22, 19), (23, 19), (24, 19), (25, 19), (26, 19), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 370
+Nos gerados: 140
+Nos visitados: 57
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (3, 20), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (22, 19), (23, 19), (24, 19), (25, 19), (26, 19), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 490
+Nos gerados: 888
+Nos visitados: 784
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (3, 20), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (22, 19), (23, 19), (24, 19), (25, 19), (26, 19), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 490
+Nos gerados: 708
+Nos visitados: 491
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (3, 20), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (22, 19), (23, 19), (24, 19), (25, 19), (26, 19), (27, 19), (27, 20), (27, 21), (27, 22), (27, 23), (27, 24), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 425
+Nos gerados: 723
+Nos visitados: 630
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (3, 20), (4, 20), (5, 20), (6, 20), (7, 20), (8, 20), (9, 20), (10, 20), (11, 20), (12, 20), (13, 20), (14, 20), (15, 20), (16, 20), (17, 20), (18, 20), (19, 20), (20, 20), (21, 20), (22, 20), (23, 20), (24, 20), (25, 20), (26, 20), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (26, 24), (26, 25), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 426
+Nos gerados: 455
+Nos visitados: 314
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (3, 20), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (22, 19), (23, 19), (24, 19), (25, 19), (26, 19), (26, 20), (26, 21), (26, 22), (26, 23), (26, 24), (26, 25), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 354
+Nos gerados: 412
+Nos visitados: 276
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (4, 22), (5, 22), (6, 22), (6, 21), (7, 21), (7, 20), (8, 20), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (22, 19), (23, 19), (24, 19), (24, 20), (24, 21), (24, 22), (24, 23), (24, 24), (25, 24), (26, 24), (26, 25), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(13, 4), (9, 1), (26, 19), (9, 19)]
+Custo do caminho: 341
+Nos gerados: 113
+Nos visitados: 39
+Caminho encontrado: [(3, 26), (3, 25), (3, 24), (3, 23), (3, 22), (3, 21), (4, 21), (4, 20), (5, 20), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (9, 20), (9, 21), (9, 22), (9, 23), (9, 24), (10, 24), (10, 25), (11, 25), (12, 25), (13, 25), (14, 25), (15, 25), (16, 25), (17, 25), (18, 25), (19, 25), (20, 25), (21, 25), (22, 25), (23, 25), (24, 25), (25, 25), (26, 25), (27, 25)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 150
+Nos gerados: 103
+Nos visitados: 65
+Caminho encontrado: [(4, 9), (5, 9), (6, 9), (6, 10), (6, 11), (6, 12), (6, 13), (6, 14), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 150
+Nos gerados: 80
+Nos visitados: 44
+Caminho encontrado: [(4, 9), (5, 9), (6, 9), (6, 10), (6, 11), (6, 12), (6, 13), (6, 14), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 175
+Nos gerados: 104
+Nos visitados: 52
+Caminho encontrado: [(4, 9), (4, 10), (4, 11), (4, 12), (4, 13), (4, 14), (4, 15), (5, 15), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 175
+Nos gerados: 111
+Nos visitados: 62
+Caminho encontrado: [(4, 9), (5, 9), (6, 9), (6, 10), (6, 11), (6, 12), (6, 13), (6, 14), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 156
+Nos gerados: 102
+Nos visitados: 57
+Caminho encontrado: [(4, 9), (4, 10), (4, 11), (4, 12), (4, 13), (4, 14), (4, 15), (5, 15), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 156
+Nos gerados: 68
+Nos visitados: 28
+Caminho encontrado: [(4, 9), (4, 10), (4, 11), (4, 12), (4, 13), (4, 14), (4, 15), (5, 15), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 144
+Nos gerados: 73
+Nos visitados: 32
+Caminho encontrado: [(4, 9), (4, 10), (4, 11), (4, 12), (4, 13), (5, 13), (5, 14), (5, 15), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(12, 4), (0, 12), (0, 6), (6, 15)]
+Custo do caminho: 143
+Nos gerados: 47
+Nos visitados: 17
+Caminho encontrado: [(4, 9), (4, 10), (4, 11), (4, 12), (4, 13), (4, 14), (5, 14), (5, 15), (6, 15), (6, 14), (6, 13), (6, 12), (6, 11), (7, 11), (8, 11), (9, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 130
+Nos gerados: 61
+Nos visitados: 35
+Caminho encontrado: [(7, 12), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 130
+Nos gerados: 43
+Nos visitados: 16
+Caminho encontrado: [(7, 12), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 190
+Nos gerados: 185
+Nos visitados: 129
+Caminho encontrado: [(7, 12), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 190
+Nos gerados: 118
+Nos visitados: 74
+Caminho encontrado: [(7, 12), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 159
+Nos gerados: 124
+Nos visitados: 84
+Caminho encontrado: [(7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 160
+Nos gerados: 68
+Nos visitados: 32
+Caminho encontrado: [(7, 12), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 120
+Nos gerados: 44
+Nos visitados: 16
+Caminho encontrado: [(7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(11, 6), (2, 26), (6, 2), (18, 11)]
+Custo do caminho: 112
+Nos gerados: 43
+Nos visitados: 16
+Caminho encontrado: [(7, 12), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c1
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c2
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c3
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_euclidiana
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
+Algoritmo: Busca A* (Farmacia)
+Funcao de Custo: custo_c4
+Funcao Heuristica: heuristica_manhattan
+Farmacias: [(17, 22), (2, 12), (27, 22), (23, 9)]
+Custo do caminho: 270
+Nos gerados: 83
+Nos visitados: 29
+Caminho encontrado: [(17, 28), (17, 27), (17, 26), (17, 25), (17, 24), (17, 23), (17, 22), (17, 21), (17, 20), (17, 19), (17, 18), (17, 17), (17, 16), (17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), (17, 1)]
+
