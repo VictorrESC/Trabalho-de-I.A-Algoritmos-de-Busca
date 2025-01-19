@@ -1,6 +1,34 @@
-import heapq
-import math
-from collections import deque
+import random
+import time
+import pandas as pd
+from busca_em_largura import busca_em_largura
+from busca_em_profundidade import busca_em_profundidade
+from custo_uniforme import busca_custo_uniforme
+from busca_gulosa import busca_gulosa
+from a_estrela import busca_a_estrela, heuristica_euclidiana, heuristica_manhattan, gerar_vizinhos
+
+# Inicializar DataFrame para armazenar resultados
+resultados_df = pd.DataFrame(columns=[
+    "No_Inicial", "No_Final",
+    "Algoritmo", "Funcao_Custo", "Funcao_Heuristica", 
+    "Custo_Caminho", "Nos_Gerados", "Nos_Visitados", "Caminho_Encontrado", "Farmacias"
+])
+
+def salvar_resultados_pandas(nome_algoritmo, resultado, custo_fun, heuristica, no_inicial, no_final, estados_farmacias=None):
+    global resultados_df
+    nova_linha = pd.DataFrame([{
+        "No_Inicial": no_inicial,
+        "No_Final": no_final,
+        "Algoritmo": nome_algoritmo,
+        "Funcao_Custo": custo_fun.__name__ if custo_fun else 'N/A',
+        "Funcao_Heuristica": heuristica.__name__ if heuristica else 'N/A',
+        "Custo_Caminho": resultado['custo'],
+        "Nos_Gerados": resultado['nos_gerados'],
+        "Nos_Visitados": resultado['nos_visitados'],
+        "Caminho_Encontrado": resultado['caminho'],
+        "Farmacias": estados_farmacias if estados_farmacias else 'N/A'
+    }])
+    resultados_df = pd.concat([resultados_df, nova_linha], ignore_index=True)
 
 # Funções de custo
 def custo_c1(estado_atual, vizinho, profundidade):
@@ -10,378 +38,212 @@ def custo_c2(estado_atual, vizinho, profundidade):
     return 10 if estado_atual[0] == vizinho[0] else 15
 
 def custo_c3(estado_atual, vizinho, profundidade):
-    return 10 if estado_atual[0] == vizinho[0] else 10 + (abs(5 - profundidade) % 6)
+    return 10 if estado_atual[0] == vizinho[0] else 10 + (abs(15 - profundidade) % 6)
 
 def custo_c4(estado_atual, vizinho, profundidade):
     return 10 if estado_atual[0] == vizinho[0] else 5 + (abs(10 - profundidade) % 11)
 
-# Heurísticas
-def heuristica_euclidiana(estado, objetivo):
-    x1, y1 = estado
-    x2, y2 = objetivo
-    return 10 * math.sqrt(abs((x1 - x2)) ** 2 + abs((y1 - y2)) ** 2)
-
-def heuristica_manhattan(estado, objetivo):
-    x1, y1 = estado
-    x2, y2 = objetivo
-    return 10 * (abs(x1 - x2) + abs(y1 - y2))
-
 # Função de geração de vizinhos
-def gerar_vizinhos(estado):
-    x, y = estado
-    vizinhos = [
-        (x - 1, y),  # Esquerda
-        (x + 1, y),  # Direita
-        (x, y - 1),  # Abaixo
-        (x, y + 1),  # Acima
-    ]
-    return [(vx, vy) for vx, vy in vizinhos if 0 <= vx <= 30 and 0 <= vy <= 30]
+def gerar_vizinhos_aleatorios(estado):
+    vizinhos = gerar_vizinhos(estado)
+    random.shuffle(vizinhos)
+    return vizinhos
 
-def salvar_resultados(nome_algoritmo, resultado, arquivo):
-    with open(arquivo, "a") as f:
-        f.write(f"Algoritmo: {nome_algoritmo}\n")
-        f.write(f"Custo do caminho: {resultado['custo']}\n")
-        f.write(f"Nós gerados: {resultado['nos_gerados']}\n")
-        f.write(f"Nós visitados: {resultado['nos_visitados']}\n")
+# Experimentos
+def executar_experimentos_parte1(arquivo_resultados, num_repeticoes=50):
+    
+    custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
+
+    for _ in range(num_repeticoes):
+          x1, y1 = random.randint(0, 30), random.randint(0, 30)
+          x2, y2 = random.randint(0, 30), random.randint(0, 30)
+          estado_inicial = (x1, y1)
+          estado_objetivo = (x2, y2)
+          print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+          start_time = time.time()
+          for custo_func in custo_funcs:
+                print(f"Executando Busca em Largura com custo {custo_func.__name__}")
+                resultado = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+                salvar_resultados_pandas("Busca em Largura", resultado, custo_func, None, estado_inicial, estado_objetivo)
+
+                print(f"Executando Busca em Profundidade com custo {custo_func.__name__}")
+                resultado = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+                salvar_resultados_pandas("Busca em Profundidade", resultado, custo_func, None, estado_inicial, estado_objetivo)
+
+                print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
+                resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
+          end_time = time.time()
+          print(f"Tempo total da Busca: {end_time - start_time}")
+
+def executar_experimentos_parte2(arquivo_resultados, num_repeticoes=50):    
+    custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
+    heuristicas = [heuristica_euclidiana, heuristica_manhattan]
+
+    for _ in range(num_repeticoes):
+           x1, y1 = random.randint(0, 30), random.randint(0, 30)
+           x2, y2 = random.randint(0, 30), random.randint(0, 30)
+           estado_inicial = (x1, y1)
+           estado_objetivo = (x2, y2)
+           print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+           start_time = time.time()
+           for custo_func in custo_funcs:
+                print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
+                resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
+                for heuristica in heuristicas:
+                  print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
+                  resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
+                  salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
+           end_time = time.time()
+           print(f"Tempo total da Busca: {end_time - start_time}")
+
+
+def executar_experimentos_parte3(arquivo_resultados, num_repeticoes=50):
+    
+    custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
+    heuristicas = [heuristica_euclidiana, heuristica_manhattan]
+    
+    for _ in range(num_repeticoes):
+        x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        estado_inicial = (x1, y1)
+        estado_objetivo = (x2, y2)
+        print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+        start_time = time.time()
+        for heuristica in heuristicas:
+           print(f"Executando Busca Gulosa com heuristica {heuristica.__name__}")
+           resultado = busca_gulosa(estado_inicial, estado_objetivo, heuristica, custo_c1, gerar_vizinhos)
+           for custo_func in custo_funcs:
+             resultado['custo'] = 0
+             for i in range(1, len(resultado['caminho'])):
+                 resultado['custo'] += custo_func(resultado['caminho'][i-1], resultado['caminho'][i], i)
+             salvar_resultados_pandas("Busca Gulosa", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
+           for custo_func in custo_funcs:
+              print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
+              resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
+              salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
+        end_time = time.time()
+        print(f"Tempo total da Busca: {end_time - start_time}")
+
+
+def executar_experimentos_parte4(arquivo_resultados, num_repeticoes = 20):
+    custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
+    
+    for _ in range(num_repeticoes):
+        x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        estado_inicial = (x1, y1)
+        estado_objetivo = (x2, y2)
+        print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+        start_time = time.time()
+        for _ in range(10):
+            for custo_func in custo_funcs:
+                print(f"Executando Busca em Largura (Random) com custo {custo_func.__name__}")
+                resultado_largura_random = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos_aleatorios)
+                salvar_resultados_pandas("Busca em Largura (Random)", resultado_largura_random, custo_func, None, estado_inicial, estado_objetivo)
+          
+                print(f"Executando Busca em Profundidade (Random) com custo {custo_func.__name__}")
+                resultado_profundidade_random = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos_aleatorios)
+                salvar_resultados_pandas("Busca em Profundidade (Random)", resultado_profundidade_random, custo_func, None, estado_inicial, estado_objetivo)
+        end_time = time.time()
+        print(f"Tempo total da Busca: {end_time - start_time}")
+
         
-        # Salva os nós visitados
-        f.write("Nós visitados: \n")
-        for estado in resultado.get('nos_visitados_lista', []):
-            f.write(f"{estado}\n")
+def executar_experimentos_parte5(arquivo_resultados, num_repeticoes = 25):
+    
+    custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
+    heuristicas = [heuristica_euclidiana, heuristica_manhattan]
+
+    for _ in range(num_repeticoes):
+        x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        x2, y2 = random.randint(0, 30), random.randint(0, 30)
         
-        # Salva o caminho
-        caminho = resultado['caminho']
-        f.write(f"Caminho encontrado: {caminho}\n")
-        f.write("\n")
+        farmacias = []
+        while len(farmacias) < 4:
+            x_farmacia = random.randint(0,30)
+            y_farmacia = random.randint(0,30)
+            farmacia_coord = (x_farmacia, y_farmacia)
+            if farmacia_coord not in farmacias and farmacia_coord != (x1, y1) and farmacia_coord != (x2, y2):
+                farmacias.append(farmacia_coord)
 
-def busca_em_largura(estado_inicial, estado_objetivo, gerar_vizinhos):
-    fila = deque([estado_inicial])
-    visitados = set()
-    visitados.add(estado_inicial)
-    pais = {estado_inicial: None}
-    profundidade = {estado_inicial: 0}
-    nos_gerados, nos_visitados = 0, 0
-    nos_visitados_lista = []  # Lista para armazenar os estados visitados
+        estado_inicial = (x1, y1)
+        estado_objetivo = (x2, y2)
+        print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+        start_time = time.time()
+        for custo_func in custo_funcs:
+            for heuristica in heuristicas:
+                 
+                melhor_caminho = None
+                melhor_custo = float('inf')
+                nos_gerados_total, nos_visitados_total = 0, 0
+                 
+                for f in farmacias:
+                    print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__} para farmacia {f}")
+                    resultado = busca_a_estrela(estado_inicial, f, gerar_vizinhos, custo_func, heuristica)
+                    
+                    if resultado['caminho']:
+                        resultado_2 = busca_a_estrela(f, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
+                    else:
+                        continue
+                    
+                    if resultado_2['caminho']:
+                       
+                        caminho_total = resultado['caminho'][:-1] + resultado_2['caminho']
+                        
+                        custo_total = 0
+                        for i in range(1, len(caminho_total)):
+                            custo_total += custo_func(caminho_total[i-1], caminho_total[i], i)
 
-    while fila:
-        estado_atual = fila.popleft()
-        nos_visitados += 1
-        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
-
-        if estado_atual == estado_objetivo:
-            caminho = []
-            while estado_atual is not None:
-                caminho.append(estado_atual)
-                estado_atual = pais[estado_atual]
-            caminho.reverse()
-            return {"caminho": caminho, "custo": profundidade[estado_objetivo] * 10, "nos_gerados": nos_gerados, "nos_visitados": nos_visitados, "nos_visitados_lista": nos_visitados_lista}
-
-        for vizinho in gerar_vizinhos(estado_atual):
-            if vizinho not in visitados:
-                visitados.add(vizinho)
-                fila.append(vizinho)
-                pais[vizinho] = estado_atual
-                profundidade[vizinho] = profundidade[estado_atual] + 1
-                nos_gerados += 1
-
-    return {"caminho": None, "custo": float("inf"), "nos_gerados": nos_gerados, "nos_visitados": nos_visitados, "nos_visitados_lista": nos_visitados_lista}
-
-def busca_em_profundidade(estado_inicial, estado_objetivo, gerar_vizinhos):
-    """
-    Implementa o algoritmo de Busca em Profundidade (DFS), evitando revisitar estados.
-
-    Args:
-        estado_inicial (tuple): O estado inicial (ex.: coordenadas).
-        estado_objetivo (tuple): O estado objetivo.
-        gerar_vizinhos (func): Função que gera os vizinhos de um estado.
-
-    Returns:
-        dict: Contendo o caminho encontrado, custo, nós gerados e nós visitados.
-    """
-    # Verificação inicial
-    if estado_inicial == estado_objetivo:
-        return {
-            "caminho": [estado_inicial],
-            "custo": 0,
-            "nos_gerados": 1,
-            "nos_visitados": 1,
-            "nos_visitados_lista": [estado_inicial]
-        }
-
-    # Inicialização
-    pilha = [estado_inicial]
-    visitados = set()
-    visitados.add(estado_inicial)
-    pais = {estado_inicial: None}
-    profundidade = {estado_inicial: 0}
-    nos_gerados, nos_visitados = 0, 0
-    # nos_visitados_lista = []  # Lista para armazenar os estados visitados
-
-    # Busca
-    while pilha:
-        estado_atual = pilha.pop()
-        nos_visitados += 1
-        # nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
-
-        # Verifica se atingiu o objetivo
-        if estado_atual == estado_objetivo:
-            # Reconstrução do caminho
-            caminho = []
-            while estado_atual is not None:
-                caminho.append(estado_atual)
-                estado_atual = pais[estado_atual]
-            caminho.reverse()
-            return {
-                "caminho": caminho,
-                "custo": profundidade[caminho[-1]] * 10,  # Ajuste do custo conforme necessário
-                "nos_gerados": nos_gerados,
-                "nos_visitados": nos_visitados,
-                # "nos_visitados_lista": nos_visitados_lista
-            }
-
-        # Gera vizinhos e processa, garantindo que não sejam visitados novamente
-        for vizinho in gerar_vizinhos(estado_atual):
-            if vizinho not in visitados:
-                visitados.add(vizinho)
-                pilha.append(vizinho)
-                pais[vizinho] = estado_atual
-                profundidade[vizinho] = profundidade[estado_atual] + 1
-                nos_gerados += 1
-
-    # Caso não encontre o objetivo
-    return {
-        "caminho": None,
-        "custo": float("inf"),
-        "nos_gerados": nos_gerados,
-        "nos_visitados": nos_visitados,
-        "nos_visitados_lista": nos_visitados_lista
-    }
-
-
-import heapq
-
-def busca_de_custo_uniforme(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_custo):
-    fila_prioridade = []
-    heapq.heappush(fila_prioridade, (0, estado_inicial))
-    visitados = set()
-    pais = {estado_inicial: None}
-    custos = {estado_inicial: 0}
-    profundidade = {estado_inicial: 0}
-    nos_gerados, nos_visitados = 0, 0
-    nos_visitados_lista = []  # Lista para armazenar os estados visitados
-
-    while fila_prioridade:
-        custo_atual, estado_atual = heapq.heappop(fila_prioridade)
-        nos_visitados += 1
-        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
-
-        if estado_atual == estado_objetivo:
-            # Reconstrói o caminho e retorna o resultado
-            caminho = []
-            while estado_atual is not None:
-                caminho.append(estado_atual)
-                estado_atual = pais[estado_atual]
-            caminho.reverse()
-            return {
-                "caminho": caminho,
-                "custo": custo_atual,
-                "nos_gerados": nos_gerados,
-                "nos_visitados": nos_visitados,
-                "nos_visitados_lista": nos_visitados_lista
-            }
-
-        if estado_atual in visitados:
-            continue
-        visitados.add(estado_atual)
-
-        for vizinho in gerar_vizinhos(estado_atual):
-            novo_custo = custo_atual + calcular_custo(estado_atual, vizinho, profundidade[estado_atual])
-            if vizinho not in visitados or novo_custo < custos.get(vizinho, float("inf")):
-                custos[vizinho] = novo_custo
-                profundidade[vizinho] = profundidade[estado_atual] + 1
-                pais[vizinho] = estado_atual
-                heapq.heappush(fila_prioridade, (novo_custo, vizinho))
-                nos_gerados += 1
-
-    return {
-        "caminho": None,
-        "custo": float("inf"),
-        "nos_gerados": nos_gerados,
-        "nos_visitados": nos_visitados,
-        "nos_visitados_lista": nos_visitados_lista
-    }
-
-
-import heapq
-
-def busca_gulosa(estado_inicial, estado_objetivo, gerar_vizinhos, heuristica, calcular_custo):
-    """
-    Implementa o algoritmo de Busca Gulosa com custo e heurística.
-
-    Args:
-        estado_inicial (any): O estado inicial do problema.
-        estado_objetivo (any): O estado objetivo do problema.
-        gerar_vizinhos (func): Função que retorna os estados vizinhos de um estado.
-        heuristica (func): Função heurística que avalia um estado.
-        calcular_custo (func): Função que calcula o custo entre dois estados.
-
-    Returns:
-        dict: Contendo o caminho encontrado, custo, nós gerados e nós visitados.
-    """
-    fila_prioridade = []
-    heapq.heappush(fila_prioridade, (0, estado_inicial))
-    visitados = set()
-    pais = {estado_inicial: None}
-    custos = {estado_inicial: 0}
-    profundidade = {estado_inicial: 0}
-    nos_gerados, nos_visitados = 0, 0
-    nos_visitados_lista = []  # Lista para armazenar os estados visitados
-
-    while fila_prioridade:
-        custo_atual, estado_atual = heapq.heappop(fila_prioridade)
-        nos_visitados += 1
-        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
-
-        if estado_atual == estado_objetivo:
-            caminho = []
-            while estado_atual is not None:
-                caminho.append(estado_atual)
-                estado_atual = pais[estado_atual]
-            caminho.reverse()
-            return {
-                "caminho": caminho,
-                "custo": custos[estado_objetivo],
-                "nos_gerados": nos_gerados,
-                "nos_visitados": nos_visitados,
-                "nos_visitados_lista": nos_visitados_lista
-            }
-
-        if estado_atual in visitados:
-            continue
-        visitados.add(estado_atual)
-
-        for vizinho in gerar_vizinhos(estado_atual):
-            custo_h = heuristica(vizinho, estado_objetivo)
-            custo_g = custos[estado_atual] + calcular_custo(estado_atual, vizinho, profundidade[estado_atual])
-            if vizinho not in visitados or custo_g < custos.get(vizinho, float("inf")):
-                custos[vizinho] = custo_g
-                profundidade[vizinho] = profundidade[estado_atual] + 1
-                pais[vizinho] = estado_atual
-                heapq.heappush(fila_prioridade, (custo_h, vizinho))
-                nos_gerados += 1
-
-    return {
-        "caminho": None,
-        "custo": float("inf"),
-        "nos_gerados": nos_gerados,
-        "nos_visitados": nos_visitados,
-        "nos_visitados_lista": nos_visitados_lista
-    }
-
-import heapq
-
-def busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_custo, heuristica):
-    """
-    Implementa o algoritmo de Busca A*.
-
-    Args:
-        estado_inicial (any): O estado inicial do problema.
-        estado_objetivo (any): O estado objetivo do problema.
-        gerar_vizinhos (func): Função que retorna os estados vizinhos de um estado.
-        calcular_custo (func): Função que calcula o custo entre dois estados.
-        heuristica (func): Função heurística que avalia um estado.
-
-    Returns:
-        dict: Contendo o caminho encontrado, custo, nós gerados e nós visitados.
-    """
-    fila_prioridade = []
-    heapq.heappush(fila_prioridade, (0, estado_inicial))
-    visitados = set()
-    pais = {estado_inicial: None}
-    custos = {estado_inicial: 0}
-    profundidade = {estado_inicial: 0}
-    nos_gerados, nos_visitados = 0, 0
-    nos_visitados_lista = []  # Lista para armazenar os estados visitados
-
-    while fila_prioridade:
-        custo_f, estado_atual = heapq.heappop(fila_prioridade)
-        nos_visitados += 1
-        nos_visitados_lista.append(estado_atual)  # Adiciona o nó visitado
-
-        if estado_atual == estado_objetivo:
-            caminho = []
-            while estado_atual is not None:
-                caminho.append(estado_atual)
-                estado_atual = pais[estado_atual]
-            caminho.reverse()
-            return {
-                "caminho": caminho,
-                "custo": custos[estado_objetivo],
-                "nos_gerados": nos_gerados,
-                "nos_visitados": nos_visitados,
-                "nos_visitados_lista": nos_visitados_lista
-            }
-
-        if estado_atual in visitados:
-            continue
-        visitados.add(estado_atual)
-
-        for vizinho in gerar_vizinhos(estado_atual):
-            custo_g = custos[estado_atual] + calcular_custo(estado_atual, vizinho, profundidade[estado_atual])
-            custo_h = heuristica(vizinho, estado_objetivo)
-            custo_f = custo_g + custo_h
-            if vizinho not in visitados or custo_g < custos.get(vizinho, float("inf")):
-                custos[vizinho] = custo_g
-                profundidade[vizinho] = profundidade[estado_atual] + 1
-                pais[vizinho] = estado_atual
-                heapq.heappush(fila_prioridade, (custo_f, vizinho))
-                nos_gerados += 1
-
-    return {
-        "caminho": None,
-        "custo": float("inf"),
-        "nos_gerados": nos_gerados,
-        "nos_visitados": nos_visitados,
-        "nos_visitados_lista": nos_visitados_lista
-    }
-
+                        if custo_total < melhor_custo:
+                            melhor_custo = custo_total
+                            melhor_caminho = caminho_total
+                            nos_gerados_total = resultado['nos_gerados'] + resultado_2['nos_gerados']
+                            nos_visitados_total = resultado['nos_visitados'] + resultado_2['nos_visitados']
+                if melhor_caminho:
+                    resultado_final = {"caminho": melhor_caminho, "custo": melhor_custo, "nos_gerados": nos_gerados_total, "nos_visitados": nos_visitados_total}
+                    salvar_resultados_pandas("Busca A* (Farmacia)", resultado_final, custo_func, heuristica, estado_inicial, estado_objetivo, farmacias)
+        end_time = time.time()
+        print(f"Tempo total da Busca: {end_time - start_time}")
 
 # Função principal
 def main():
-    estado_inicial = (0, 0)
-    estado_objetivo = (5, 5)
-    cenarios_custo = [custo_c1, custo_c2, custo_c3, custo_c4]
-    arquivo_resultados = "resultados_busca.txt"
+    # Arquivos CSV para salvar resultados
+    arquivo_csv1 = "resultados_experimento_1.csv"
+    arquivo_csv2 = "resultados_experimento_2.csv"
+    arquivo_csv3 = "resultados_experimento_3.csv"
+    arquivo_csv4 = "resultados_experimento_4.csv"
+    arquivo_csv5 = "resultados_experimento_5.csv"
 
-    # Limpa o arquivo de resultados
-    with open(arquivo_resultados, "w") as f:
-        f.write("Resultados das buscas:\n\n")
+    global resultados_df  # Garante que a função utilize o DataFrame global para armazenar resultados
 
-    for i, custo_func in enumerate(cenarios_custo, start=1):
-        print(f"\n--- Cenário C{i} ---")
+    # Executa os experimentos e salva os resultados em CSV
+    print("Executando experimento 1...")
+    executar_experimentos_parte1(arquivo_csv1)
+    resultados_df.to_csv(arquivo_csv1, index=False)
+    resultados_df = pd.DataFrame(columns=resultados_df.columns)  # Limpa o DataFrame para o próximo experimento
 
-        with open(arquivo_resultados, "a") as f:
-            f.write(f"\n==== Cenário C{i} ====" + "\n\n")
-        
-        resultado_largura = busca_em_largura(estado_inicial, estado_objetivo, gerar_vizinhos)
-        print(f"Busca em Largura: Custo: {resultado_largura['custo']}, Nós Gerados: {resultado_largura['nos_gerados']}, Nós Visitados: {resultado_largura['nos_visitados']}")
-        salvar_resultados("Busca em Largura", resultado_largura, arquivo_resultados)
+    print("Executando experimento 2...")
+    executar_experimentos_parte2(arquivo_csv2)
+    resultados_df.to_csv(arquivo_csv2, index=False)
+    resultados_df = pd.DataFrame(columns=resultados_df.columns)
 
-        resultado_profundidade = busca_em_profundidade(estado_inicial, estado_objetivo, gerar_vizinhos)
-        print(f"Busca em Profundidade: Custo: {resultado_profundidade['custo']}, Nós Gerados: {resultado_profundidade['nos_gerados']}, Nós Visitados: {resultado_profundidade['nos_visitados']}")
-        salvar_resultados("Busca em Profundidade", resultado_profundidade, arquivo_resultados)
+    print("Executando experimento 3...")
+    executar_experimentos_parte3(arquivo_csv3)
+    resultados_df.to_csv(arquivo_csv3, index=False)
+    resultados_df = pd.DataFrame(columns=resultados_df.columns)
 
-        resultado_custo_uniforme = busca_de_custo_uniforme(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func)
-        print(f"Busca de Custo Uniforme: Custo: {resultado_custo_uniforme['custo']}, Nós Gerados: {resultado_custo_uniforme['nos_gerados']}, Nós Visitados: {resultado_custo_uniforme['nos_visitados']}")
-        salvar_resultados("Busca de Custo Uniforme", resultado_custo_uniforme, arquivo_resultados)
+    print("Executando experimento 4...")
+    executar_experimentos_parte4(arquivo_csv4)
+    resultados_df.to_csv(arquivo_csv4, index=False)
+    resultados_df = pd.DataFrame(columns=resultados_df.columns)
 
-        resultado_gulosa = busca_gulosa(estado_inicial, estado_objetivo, gerar_vizinhos, heuristica_manhattan, custo_func)
-        print(f"Busca Gulosa: Custo: {resultado_gulosa['custo']}, Nós Gerados: {resultado_gulosa['nos_gerados']}, Nós Visitados: {resultado_gulosa['nos_visitados']}")
-        salvar_resultados("Busca Gulosa", resultado_gulosa, arquivo_resultados)
+    print("Executando experimento 5...")
+    executar_experimentos_parte5(arquivo_csv5)
+    resultados_df.to_csv(arquivo_csv5, index=False)
+    resultados_df = pd.DataFrame(columns=resultados_df.columns)
 
-        resultado_a_estrela = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica_manhattan)
-        print(f"Busca A*: Custo: {resultado_a_estrela['custo']}, Nós Gerados: {resultado_a_estrela['nos_gerados']}, Nós Visitados: {resultado_a_estrela['nos_visitados']}")
-        salvar_resultados("Busca A*", resultado_a_estrela, arquivo_resultados)     
+    print("\nExperimentos concluídos. Resultados salvos nos arquivos CSV.")
 
 if __name__ == "__main__":
     main()
