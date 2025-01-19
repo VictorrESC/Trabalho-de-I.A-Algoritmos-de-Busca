@@ -9,13 +9,16 @@ from a_estrela import busca_a_estrela, heuristica_euclidiana, heuristica_manhatt
 
 # Inicializar DataFrame para armazenar resultados
 resultados_df = pd.DataFrame(columns=[
+    "No_Inicial", "No_Final",
     "Algoritmo", "Funcao_Custo", "Funcao_Heuristica", 
     "Custo_Caminho", "Nos_Gerados", "Nos_Visitados", "Caminho_Encontrado", "Farmacias"
 ])
 
-def salvar_resultados_pandas(nome_algoritmo, resultado, custo_fun, heuristica, estados_farmacias=None):
+def salvar_resultados_pandas(nome_algoritmo, resultado, custo_fun, heuristica, no_inicial, no_final, estados_farmacias=None):
     global resultados_df
     nova_linha = pd.DataFrame([{
+        "No_Inicial": no_inicial,
+        "No_Final": no_final,
         "Algoritmo": nome_algoritmo,
         "Funcao_Custo": custo_fun.__name__ if custo_fun else 'N/A',
         "Funcao_Heuristica": heuristica.__name__ if heuristica else 'N/A',
@@ -46,20 +49,6 @@ def gerar_vizinhos_aleatorios(estado):
     random.shuffle(vizinhos)
     return vizinhos
 
-# Função para salvar resultados no arquivo
-# def salvar_resultados(nome_algoritmo, resultado, custo_fun, heuristica, arquivo, estados_farmacias = None):
-#     with open(arquivo, "a") as f:
-#         f.write(f"Algoritmo: {nome_algoritmo}\n")
-#         f.write(f"Funcao de Custo: {custo_fun.__name__ if custo_fun else 'N/A'}\n")
-#         f.write(f"Funcao Heuristica: {heuristica.__name__ if heuristica else 'N/A'}\n")
-#         if estados_farmacias:
-#             f.write(f"Farmacias: {estados_farmacias}\n")
-#         f.write(f"Custo do caminho: {resultado['custo']}\n")
-#         f.write(f"Nos gerados: {resultado['nos_gerados']}\n")
-#         f.write(f"Nos visitados: {resultado['nos_visitados']}\n")
-#         f.write(f"Caminho encontrado: {resultado['caminho']}\n")
-#         f.write("\n")
-
 # Experimentos
 def executar_experimentos_parte1(arquivo_resultados, num_repeticoes=50):
     
@@ -75,15 +64,15 @@ def executar_experimentos_parte1(arquivo_resultados, num_repeticoes=50):
           for custo_func in custo_funcs:
                 print(f"Executando Busca em Largura com custo {custo_func.__name__}")
                 resultado = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca em Largura", resultado, custo_func, None, arquivo_resultados)
+                salvar_resultados_pandas("Busca em Largura", resultado, custo_func, None, estado_inicial, estado_objetivo)
 
                 print(f"Executando Busca em Profundidade com custo {custo_func.__name__}")
                 resultado = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca em Profundidade", resultado, custo_func, None, arquivo_resultados)
+                salvar_resultados_pandas("Busca em Profundidade", resultado, custo_func, None, estado_inicial, estado_objetivo)
 
                 print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
                 resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, arquivo_resultados)
+                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
           end_time = time.time()
           print(f"Tempo total da Busca: {end_time - start_time}")
 
@@ -101,11 +90,11 @@ def executar_experimentos_parte2(arquivo_resultados, num_repeticoes=50):
            for custo_func in custo_funcs:
                 print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
                 resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, arquivo_resultados)
+                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
                 for heuristica in heuristicas:
                   print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
                   resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
-                  salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, arquivo_resultados)
+                  salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
            end_time = time.time()
            print(f"Tempo total da Busca: {end_time - start_time}")
 
@@ -129,11 +118,11 @@ def executar_experimentos_parte3(arquivo_resultados, num_repeticoes=50):
              resultado['custo'] = 0
              for i in range(1, len(resultado['caminho'])):
                  resultado['custo'] += custo_func(resultado['caminho'][i-1], resultado['caminho'][i], i)
-             salvar_resultados_pandas("Busca Gulosa", resultado, custo_func, heuristica, arquivo_resultados)
+             salvar_resultados_pandas("Busca Gulosa", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
            for custo_func in custo_funcs:
               print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
               resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
-              salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, arquivo_resultados)
+              salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
         end_time = time.time()
         print(f"Tempo total da Busca: {end_time - start_time}")
 
@@ -152,11 +141,11 @@ def executar_experimentos_parte4(arquivo_resultados, num_repeticoes = 20):
             for custo_func in custo_funcs:
                 print(f"Executando Busca em Largura (Random) com custo {custo_func.__name__}")
                 resultado_largura_random = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos_aleatorios)
-                salvar_resultados_pandas("Busca em Largura (Random)", resultado_largura_random, custo_func, None, arquivo_resultados)
+                salvar_resultados_pandas("Busca em Largura (Random)", resultado_largura_random, custo_func, None, estado_inicial, estado_objetivo)
           
                 print(f"Executando Busca em Profundidade (Random) com custo {custo_func.__name__}")
                 resultado_profundidade_random = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos_aleatorios)
-                salvar_resultados_pandas("Busca em Profundidade (Random)", resultado_profundidade_random, custo_func, None, arquivo_resultados)
+                salvar_resultados_pandas("Busca em Profundidade (Random)", resultado_profundidade_random, custo_func, None, estado_inicial, estado_objetivo)
         end_time = time.time()
         print(f"Tempo total da Busca: {end_time - start_time}")
 
@@ -213,7 +202,7 @@ def executar_experimentos_parte5(arquivo_resultados, num_repeticoes = 25):
                             nos_visitados_total = resultado['nos_visitados'] + resultado_2['nos_visitados']
                 if melhor_caminho:
                     resultado_final = {"caminho": melhor_caminho, "custo": melhor_custo, "nos_gerados": nos_gerados_total, "nos_visitados": nos_visitados_total}
-                    salvar_resultados_pandas("Busca A* (Farmacia)", resultado_final, custo_func, heuristica, farmacias)
+                    salvar_resultados_pandas("Busca A* (Farmacia)", resultado_final, custo_func, heuristica, estado_inicial, estado_objetivo, farmacias)
         end_time = time.time()
         print(f"Tempo total da Busca: {end_time - start_time}")
 

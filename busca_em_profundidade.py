@@ -1,5 +1,5 @@
 def busca_em_profundidade(estado_inicial, estado_objetivo, custo_fun, gerar_vizinhos):
-    pilha = [(estado_inicial, None, 0)]
+    pilha = [(estado_inicial, None, 0)] # (estado, pai, profundidade)
     visitados = set()
     nos_gerados = 0
     nos_visitados = 0

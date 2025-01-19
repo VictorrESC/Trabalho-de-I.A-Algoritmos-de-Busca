@@ -2,19 +2,6 @@ import heapq
 import math
 
 def busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, calcular_custo, heuristica):
-    """
-    Implementação do algoritmo A* com heurísticas.
-
-    Parâmetros:
-        estado_inicial (tuple): Coordenadas iniciais (x, y).
-        estado_objetivo (tuple): Coordenadas objetivo (x, y).
-        gerar_vizinhos (function): Função que gera os vizinhos de um estado dado.
-        calcular_custo (function): Função que calcula o custo para mover entre dois estados.
-        heuristica (function): Função heurística para estimar o custo até o objetivo.
-
-    Retorna:
-        dict: Um dicionário com informações do resultado da busca.
-    """
 
     # Fila de prioridade: (f(n), estado, pai, profundidade)
     fila_prioridade = [(heuristica(estado_inicial, estado_objetivo), estado_inicial, None, 0)]
