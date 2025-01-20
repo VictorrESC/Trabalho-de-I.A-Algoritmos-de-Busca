@@ -32,13 +32,13 @@ As funções de experimentos (parte 1 até 5) foram modificadas para oferecer ma
            # x2, y2 = random.randint(0, 30), random.randint(0, 30)
            # estado_inicial = (x1, y1)
            # estado_objetivo = (x2, y2)
-       ```
+      
 *  **Estados Fixos:**
     *   Caso o usuário queira definir quais são os estados iniciais e objetivos para executar o experimento, basta descomentar e mudar o código com estados desejados.
         ```python
         estado_inicial = (0, 0)
         estado_objetivo = (30, 5)
-       ```
+       
 
 *   **Como usar:**
     1.  Para executar o código com os parâmetros aleatórios, comente a parte que tem o estado fixo, e descomente a parte dos estados aleatórios.
@@ -71,3 +71,8 @@ As funções de experimentos (parte 1 até 5) foram modificadas para oferecer ma
 *   Este projeto foi desenvolvido para fins de estudo e demonstração dos algoritmos de busca.
 *   Os resultados podem variar dependendo da configuração dos parâmetros e das entradas.
 *   Sinta-se à vontade para modificar o código, testar diferentes abordagens e analisar os resultados gerados.
+
+## Colaboradores
+
+*   Kaynan Pereira de Sousa - 540864
+*   Victor Emanuel de Sousa Costa - 535718
