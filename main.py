@@ -55,49 +55,62 @@ def executar_experimentos_parte1(arquivo_resultados, num_repeticoes=50):
     custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
 
     for _ in range(num_repeticoes):
-          x1, y1 = random.randint(0, 30), random.randint(0, 30)
-          x2, y2 = random.randint(0, 30), random.randint(0, 30)
-          estado_inicial = (x1, y1)
-          estado_objetivo = (x2, y2)
-          print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
-          start_time = time.time()
-          for custo_func in custo_funcs:
-                print(f"Executando Busca em Largura com custo {custo_func.__name__}")
-                resultado = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca em Largura", resultado, custo_func, None, estado_inicial, estado_objetivo)
+        # Pode ser definido um estado inicial e objetivo aleatório para o experimento
 
-                print(f"Executando Busca em Profundidade com custo {custo_func.__name__}")
-                resultado = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca em Profundidade", resultado, custo_func, None, estado_inicial, estado_objetivo)
+        # x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        # x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        # estado_inicial = (x1, y1)
+        # estado_objetivo = (x2, y2)
 
-                print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
-                resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
-          end_time = time.time()
-          print(f"Tempo total da Busca: {end_time - start_time}")
+        # Pode ser definido um estado inicial e objetivo fixo para o experimento
+        estado_inicial = (0, 0)
+        estado_objetivo = (30, 5)
+
+        print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+        start_time = time.time()
+        for custo_func in custo_funcs:
+            print(f"Executando Busca em Largura com custo {custo_func.__name__}")
+            resultado = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+            salvar_resultados_pandas("Busca em Largura", resultado, custo_func, None, estado_inicial, estado_objetivo)
+
+            print(f"Executando Busca em Profundidade com custo {custo_func.__name__}")
+            resultado = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+            salvar_resultados_pandas("Busca em Profundidade", resultado, custo_func, None, estado_inicial, estado_objetivo)
+
+            print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
+            resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+            salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
+        end_time = time.time()
+        print(f"Tempo total da Busca: {end_time - start_time}")
 
 def executar_experimentos_parte2(arquivo_resultados, num_repeticoes=50):    
     custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
     heuristicas = [heuristica_euclidiana, heuristica_manhattan]
 
     for _ in range(num_repeticoes):
-           x1, y1 = random.randint(0, 30), random.randint(0, 30)
-           x2, y2 = random.randint(0, 30), random.randint(0, 30)
-           estado_inicial = (x1, y1)
-           estado_objetivo = (x2, y2)
-           print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
-           start_time = time.time()
-           for custo_func in custo_funcs:
-                print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
-                resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
-                salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
-                for heuristica in heuristicas:
-                  print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
-                  resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
-                  salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
-           end_time = time.time()
-           print(f"Tempo total da Busca: {end_time - start_time}")
+        # Pode ser definido um estado inicial e objetivo aleatório para o experimento
 
+        # x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        # x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        # estado_inicial = (x1, y1)
+        # estado_objetivo = (x2, y2)
+
+        # Pode ser definido um estado inicial e objetivo fixo para o experimento
+        estado_inicial = (0, 0)
+        estado_objetivo = (10, 5)
+        
+        print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
+        start_time = time.time()
+        for custo_func in custo_funcs:
+            print(f"Executando Busca de Custo Uniforme com custo {custo_func.__name__}")
+            resultado = busca_custo_uniforme(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos)
+            salvar_resultados_pandas("Busca de Custo Uniforme", resultado, custo_func, None, estado_inicial, estado_objetivo)
+            for heuristica in heuristicas:
+                print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
+                resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
+                salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
+        end_time = time.time()
+        print(f"Tempo total da Busca: {end_time - start_time}")
 
 def executar_experimentos_parte3(arquivo_resultados, num_repeticoes=50):
     
@@ -105,36 +118,49 @@ def executar_experimentos_parte3(arquivo_resultados, num_repeticoes=50):
     heuristicas = [heuristica_euclidiana, heuristica_manhattan]
     
     for _ in range(num_repeticoes):
-        x1, y1 = random.randint(0, 30), random.randint(0, 30)
-        x2, y2 = random.randint(0, 30), random.randint(0, 30)
-        estado_inicial = (x1, y1)
-        estado_objetivo = (x2, y2)
+        # Pode ser definido um estado inicial e objetivo aleatório para o experimento
+
+        # x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        # x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        # estado_inicial = (x1, y1)
+        # estado_objetivo = (x2, y2)
+
+        # Pode ser definido um estado inicial e objetivo fixo para o experimento
+        estado_inicial = (0, 0)
+        estado_objetivo = (15, 5)
+
         print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
         start_time = time.time()
         for heuristica in heuristicas:
-           print(f"Executando Busca Gulosa com heuristica {heuristica.__name__}")
-           resultado = busca_gulosa(estado_inicial, estado_objetivo, heuristica, custo_c1, gerar_vizinhos)
-           for custo_func in custo_funcs:
-             resultado['custo'] = 0
-             for i in range(1, len(resultado['caminho'])):
-                 resultado['custo'] += custo_func(resultado['caminho'][i-1], resultado['caminho'][i], i)
-             salvar_resultados_pandas("Busca Gulosa", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
-           for custo_func in custo_funcs:
-              print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
-              resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
-              salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
+            print(f"Executando Busca Gulosa com heuristica {heuristica.__name__}")
+            resultado = busca_gulosa(estado_inicial, estado_objetivo, heuristica, custo_c1, gerar_vizinhos)
+            for custo_func in custo_funcs:
+                resultado['custo'] = 0
+                for i in range(1, len(resultado['caminho'])):
+                    resultado['custo'] += custo_func(resultado['caminho'][i-1], resultado['caminho'][i], i)
+                salvar_resultados_pandas("Busca Gulosa", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
+            for custo_func in custo_funcs:
+                print(f"Executando Busca A* com custo {custo_func.__name__} e heuristica {heuristica.__name__}")
+                resultado = busca_a_estrela(estado_inicial, estado_objetivo, gerar_vizinhos, custo_func, heuristica)
+                salvar_resultados_pandas("Busca A*", resultado, custo_func, heuristica, estado_inicial, estado_objetivo)
         end_time = time.time()
         print(f"Tempo total da Busca: {end_time - start_time}")
-
 
 def executar_experimentos_parte4(arquivo_resultados, num_repeticoes = 20):
     custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
     
     for _ in range(num_repeticoes):
-        x1, y1 = random.randint(0, 30), random.randint(0, 30)
-        x2, y2 = random.randint(0, 30), random.randint(0, 30)
-        estado_inicial = (x1, y1)
-        estado_objetivo = (x2, y2)
+        # Pode ser definido um estado inicial e objetivo aleatório para o experimento
+
+        # x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        # x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        # estado_inicial = (x1, y1)
+        # estado_objetivo = (x2, y2)
+
+        # Pode ser definido um estado inicial e objetivo fixo para o experimento
+        estado_inicial = (0, 0)
+        estado_objetivo = (20, 5)
+
         print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
         start_time = time.time()
         for _ in range(10):
@@ -142,33 +168,45 @@ def executar_experimentos_parte4(arquivo_resultados, num_repeticoes = 20):
                 print(f"Executando Busca em Largura (Random) com custo {custo_func.__name__}")
                 resultado_largura_random = busca_em_largura(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos_aleatorios)
                 salvar_resultados_pandas("Busca em Largura (Random)", resultado_largura_random, custo_func, None, estado_inicial, estado_objetivo)
-          
+            
                 print(f"Executando Busca em Profundidade (Random) com custo {custo_func.__name__}")
                 resultado_profundidade_random = busca_em_profundidade(estado_inicial, estado_objetivo, custo_func, gerar_vizinhos_aleatorios)
                 salvar_resultados_pandas("Busca em Profundidade (Random)", resultado_profundidade_random, custo_func, None, estado_inicial, estado_objetivo)
         end_time = time.time()
         print(f"Tempo total da Busca: {end_time - start_time}")
-
-        
+ 
 def executar_experimentos_parte5(arquivo_resultados, num_repeticoes = 25):
     
     custo_funcs = [custo_c1, custo_c2, custo_c3, custo_c4]
     heuristicas = [heuristica_euclidiana, heuristica_manhattan]
 
-    for _ in range(num_repeticoes):
-        x1, y1 = random.randint(0, 30), random.randint(0, 30)
-        x2, y2 = random.randint(0, 30), random.randint(0, 30)
-        
-        farmacias = []
-        while len(farmacias) < 4:
-            x_farmacia = random.randint(0,30)
-            y_farmacia = random.randint(0,30)
-            farmacia_coord = (x_farmacia, y_farmacia)
-            if farmacia_coord not in farmacias and farmacia_coord != (x1, y1) and farmacia_coord != (x2, y2):
-                farmacias.append(farmacia_coord)
+    # Caso desejado, pode-se definir as farmácias manualmente, tendo que comentar o bloco de código que gera as farmácias aleatórias.
+    farmacias =[ (0, 0), (0, 30), (30, 0), (30, 30)]
 
+    for _ in range(num_repeticoes):
+        # Pode ser definido um estado inicial e objetivo aleatório para o experimento
+
+        # x1, y1 = random.randint(0, 30), random.randint(0, 30)
+        # x2, y2 = random.randint(0, 30), random.randint(0, 30)
+        
+        # Pode ser definido um estado inicial e objetivo fixo para o experimento
+        x1, y1 = (0, 0)
+        x2, y2 = (7, 7)
+        
+        ### Inicio do bloco de código que gera as farmácias aleatórias / Comentar caso deseje definir as farmácias manualmente.
+
+        # farmacias = []
+        # while len(farmacias) < 4:
+        #     x_farmacia = random.randint(0,30)
+        #     y_farmacia = random.randint(0,30)
+        #     farmacia_coord = (x_farmacia, y_farmacia)
+        #     if farmacia_coord not in farmacias and farmacia_coord != (x1, y1) and farmacia_coord != (x2, y2):
+        #         farmacias.append(farmacia_coord)
+
+        ### Fim do bloco de código que gera as farmácias aleatórias
         estado_inicial = (x1, y1)
         estado_objetivo = (x2, y2)
+
         print(f"\n---Início da Busca: Estado Inicial {estado_inicial} Estado Objetivo: {estado_objetivo}---")
         start_time = time.time()
         for custo_func in custo_funcs:
